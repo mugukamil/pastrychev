@@ -150,6 +150,8 @@ a:active {
 
 .site-header__login {
   text-align: right;
+  margin-bottom: 15px;
+  margin-right: 20px;
 }
 
 .site-header__login li {
@@ -180,9 +182,14 @@ a:active {
   color: #9f9f9f;
 }
 
+.site-header__contacts {
+  margin-bottom: 10px;
+}
+
 .site-header__phone {
   display: inline-block;
   vertical-align: top;
+  margin-right: 25px;
 }
 
 .site-header__phone .icon {
@@ -190,7 +197,7 @@ a:active {
   background-image: url("../img/sprite.png");
   width: 34px;
   height: 28px;
-  background-position: 0px -88px;
+  background-position: 0px -132px;
   margin-right: 8px;
 }
 
@@ -210,7 +217,7 @@ a:active {
 
 .site-header__email {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: bottom;
 }
 
 .site-header__email a {
@@ -222,6 +229,163 @@ a:active {
 
 .site-header__email a:active {
   color: #9f9f9f;
+}
+
+.site-header__social {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 50px;
+  margin-left: 180px;
+}
+
+.site-header__social li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.site-header__social li + li {
+  margin-left: 25px;
+}
+
+.site-header__social li .icon {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+}
+
+.site-header__social li .icon.icon-inst {
+  background-image: url("../img/sprite.png");
+  width: 34px;
+  height: 34px;
+  background-position: 0px 0px;
+}
+
+.site-header__social li .icon.icon-inst:hover {
+  background-image: url("../img/sprite.png");
+  width: 34px;
+  height: 34px;
+  background-position: -88px -44px;
+}
+
+.site-header__social li .icon.icon-inst:active {
+  background-image: url("../img/sprite.png");
+  width: 34px;
+  height: 34px;
+  background-position: 0px -88px;
+}
+
+.site-header__social li .icon.icon-fb {
+  background-image: url("../img/sprite.png");
+  width: 34px;
+  height: 34px;
+  background-position: -88px 0px;
+}
+
+.site-header__social li .icon.icon-fb:hover {
+  background-image: url("../img/sprite.png");
+  width: 34px;
+  height: 34px;
+  background-position: 0px -44px;
+}
+
+.site-header__social li .icon.icon-fb:active {
+  background-image: url("../img/sprite.png");
+  width: 34px;
+  height: 34px;
+  background-position: -44px -44px;
+}
+
+.site-header__social li .icon.icon-vk {
+  background-image: url("../img/sprite.png");
+  width: 34px;
+  height: 34px;
+  background-position: -44px 0px;
+}
+
+.site-header__social li .icon.icon-vk:hover {
+  background-image: url("../img/sprite.png");
+  width: 34px;
+  height: 34px;
+  background-position: -88px -88px;
+}
+
+.site-header__social li .icon.icon-vk:active {
+  background-image: url("../img/sprite.png");
+  width: 34px;
+  height: 34px;
+  background-position: -44px -88px;
+}
+
+.site-header__question {
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.site-header__question a {
+  color: #000000;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.site-header__question a:hover .icon {
+  background-image: url("../img/sprite.png");
+  width: 34px;
+  height: 34px;
+  background-position: -132px 0px;
+}
+
+.site-header__question a:active {
+  color: #9f9f9f;
+}
+
+.site-header__question a:active .icon {
+  background-image: url("../img/sprite.png");
+  width: 34px;
+  height: 34px;
+  background-position: -132px -44px;
+}
+
+.site-header__question a .icon {
+  content: '';
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-image: url("../img/sprite.png");
+  width: 34px;
+  height: 34px;
+  background-position: -132px -88px;
+}
+
+.site-header__search input[type='search'] {
+  width: 498px;
+  height: 40px;
+  background-color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.site-header__search input[type='submit'] {
+  height: 40px;
+  background-color: #828282;
+  color: #eeeeee;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 22px;
+  font-weight: 400;
+  padding: 10px 15px;
+  vertical-align: top;
+}
+
+.site-header__search input[type='submit']:hover {
+  background-color: #fc2db7;
+}
+
+.site-header__search input[type='submit']:active {
+  background-color: #9f9f9f;
 }
 
 /*# sourceMappingURL=app.css.map */
