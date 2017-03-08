@@ -1,0 +1,227 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, fieldset, a img {
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.icon-facebook {
+  width: 0.53em;
+  height: 1em;
+  fill: #000;
+}
+
+body {
+  background-color: #eee;
+  min-width: 1254px;
+}
+
+.container {
+  width: 1254px;
+  margin: auto;
+}
+
+.clr {
+  *zoom: 1;
+}
+
+.clr:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.site-header {
+  margin-top: 20px;
+}
+
+.site-header__logo {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.site-header .slogan {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 80px;
+  color: #444444;
+  font-family: "PF Din Text Cond Pro";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.site-header .slogan__text-border {
+  display: inline-block;
+  font-size: 22px;
+  padding-top: 20px;
+  border-top: 1px solid #9f9f9f;
+}
+
+.site-header .slogan__text-big {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.site-header__right {
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.site-header__login {
+  text-align: right;
+}
+
+.site-header__login li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.site-header__login li + li:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 30px;
+  background-color: #9f9f9f;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.site-header__login a {
+  height: 17px;
+  color: #000000;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.site-header__login a:active {
+  color: #9f9f9f;
+}
+
+.site-header__phone {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.site-header__phone .icon {
+  display: inline-block;
+  background-image: url("../img/sprite.png");
+  width: 34px;
+  height: 28px;
+  background-position: 0px -88px;
+  margin-right: 8px;
+}
+
+.site-header__phone a {
+  font-family: "PF Din Text Cond Pro";
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #444444;
+  font-size: 22px;
+}
+
+.site-header__phone a strong {
+  color: #000000;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.site-header__email {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.site-header__email a {
+  color: #000;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.site-header__email a:active {
+  color: #9f9f9f;
+}
+
+/*# sourceMappingURL=app.css.map */
