@@ -1,0 +1,15 @@
+-var links = ['Каталог', 'Блог PastRyChef', 'Обучение', 'Доставка и оплата', 'Контакты']
+
+nav.site-nav
+  .container
+    ul.site-nav__menu
+      each link in links
+        li
+          a(href='#') #{link}
+    .site-nav__cart
+      a.site-nav__cart-link(href="#") Корзина
+      .site-nav__cart-info
+        p 15 товаров, 17089 руб.
+        a(href="#") Оформить заказ
+
+

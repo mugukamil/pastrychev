@@ -110,8 +110,18 @@ a:active {
   text-decoration: underline;
 }
 
+.section__title {
+  color: #444444;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
 .site-header {
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .site-header__logo {
@@ -386,6 +396,149 @@ a:active {
 
 .site-header__search input[type='submit']:active {
   background-color: #9f9f9f;
+}
+
+.site-nav {
+  background-color: #bbbbbb;
+  text-align: center;
+}
+
+.site-nav__menu {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.site-nav li {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 19px;
+  padding-bottom: 14px;
+}
+
+.site-nav li + li {
+  margin-left: 50px;
+}
+
+.site-nav li a {
+  color: #000000;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-nav li a:hover {
+  color: #fff;
+}
+
+.site-nav li a:active {
+  color: #9f9f9f;
+}
+
+.site-nav__cart {
+  float: right;
+  color: #ffffff;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.site-nav__cart-link {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fc2db7;
+  padding: 19px 20px;
+  margin-right: -3px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.site-nav__cart-link:hover {
+  background-color: #828282;
+  text-decoration: none;
+}
+
+.site-nav__cart-link:active {
+  background-color: #9f9f9f;
+}
+
+.site-nav__cart-info {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fc2db7;
+  padding: 9px 15px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.site-nav__cart-info a {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.site-nav__cart-info a:hover {
+  text-decoration: none;
+}
+
+.site-nav__cart-info a:active {
+  color: #9f9f9f;
+  text-decoration: none;
+}
+
+.fav {
+  margin-top: 40px;
+}
+
+.fav__list {
+  display: inline-block;
+  vertical-align: top;
+  width: 280px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.fav__list ul {
+  margin-top: 10px;
+}
+
+.fav__item {
+  *zoom: 1;
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: "PF Din Text Cond Pro";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.fav__item:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.fav__img {
+  margin-right: 10px;
+  max-width: 130px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.fav__link {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 130px;
+  padding-top: 8px;
+  border-top: 1px solid  #9f9f9f;
+  color: #000000;
+}
+
+.fav__link:active {
+  color: #9f9f9f;
 }
 
 /*# sourceMappingURL=app.css.map */
