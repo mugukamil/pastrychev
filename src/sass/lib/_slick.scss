@@ -4,13 +4,12 @@
     position: relative;
     display: block;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
@@ -92,5 +91,57 @@
         display: block;
         height: auto;
         border: 1px solid transparent;
+    }
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 40%;
+    width: 33px;
+    height: 38px;
+    background-color: transparent;
+    z-index: 10;
+    font-size: 0;
+}
+
+.slick-prev {
+    background-image: url(../img/icon-prev.png);
+    left: -20px;
+}
+
+.slick-next {
+    background-image: url(../img/icon-next.png);
+    right: -20px;
+}
+
+.slick-dots {
+    text-align: center;
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+
+    li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: #828282;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &.slick-active {
+            background-color: #fb2cb6;
+        }
+
+        & + li {
+            margin-left: 10px;
+        }
+    }
+
+    button {
+        font-size: 0;
     }
 }

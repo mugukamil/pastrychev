@@ -1,0 +1,12 @@
+section.section.hits
+  .container
+    h1.section__title Хиты продаж
+  hr.section__hr
+  .container
+    .news-slider
+      -var news = [[{ link: 'Рельефные листы для шоколада (KIT1), 4 шт.', price: '420.00 руб.'}], [{ link:'Какао-масло в каллетах Callebaut', price:'490.00 руб.'}], [{ link:'Подложка круглая золото/жемчуг, толщина 1,5 мм', price:'14.00 руб.'}], [{ link:'Миндальная мука мелкого помола DGF, 1 кг', price:'1 350.00 руб.'}], [{ link:'Коробка для торта (255*255*120)', price:'40.00 руб.'}], [{ link:'Коробка для торта (325*325*120)', price: '420.00 руб.'}]]
+      each n, i in news
+        .news-slider__in
+          img.news-slider__img(src="img/news#{i+1}.png", alt="")
+          p: a.news-slider__link(href="#" ) #{n[0].link}
+          p.news-slider__price #{n[0].price}

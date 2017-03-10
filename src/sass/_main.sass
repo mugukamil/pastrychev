@@ -1,6 +1,12 @@
++font('pfdin-regular', 'pfdintextcondpro-regular')
++font('pfdin-italic', 'pfdintextcondpro-italic')
++font('tt0248', 'tt0248m')
++font('tt0249', 'tt0249m')
+
 body
     background-color: #eee
     min-width: 1254px
+    font-family: 'pfdin-regular', sans-serif
 
 .container
     width: 1254px
@@ -17,6 +23,8 @@ a
     text-decoration: underline
 
 .section
+  & + .section
+    margin-top: 40px
   &__title
     color: #444444
     font-family: "PF Din Text Cond Pro"
@@ -24,3 +32,6 @@ a
     font-weight: 400
     line-height: 40px
     text-transform: uppercase
+  &__hr
+    border-top: 0
+    border-bottom: 1px solid #eee
