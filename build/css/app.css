@@ -224,7 +224,7 @@ html {
 
 @font-face {
   font-family: "pfdin-regular";
-  src: url("../fonts/pfdintextcondpro-regular.woff2") format("woff2"), url("../fonts/pfdintextcondpro-regular.woff") format("woff");
+  src: url("fonts/pfdintextcondpro-regular.woff2") format("woff2"), url("fonts/pfdintextcondpro-regular.woff") format("woff");
 }
 
 @font-face {
