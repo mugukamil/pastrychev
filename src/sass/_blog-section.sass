@@ -1,0 +1,84 @@
+.blog
+  .blog-page &
+    margin-top: 40px
+  &__links
+    text-align: center
+    margin-top: 15px
+    margin-bottom: 15px
+    li
+      +dib
+      font-size: 18px
+      font-weight: 400
+      & + li:before
+        content: '|'
+        display: inline-block
+        color: #9f9f9f
+        margin-right: 12px
+        margin-left: 8px
+      &:nth-child(7)
+        &:before
+          content: ''
+          margin-left: 0
+    a
+      font-size: 18px
+      font-weight: 400
+      color: #444444
+      line-height: 30px
+      &:hover
+        text-decoration: none
+        color: #fc2db7
+      &:active
+        color: #9f9f9f
+  &__posts
+    margin-top: 17px
+  .post
+    +dib
+    &__category
+      color: #9f9f9f
+      font-size: 16px
+      font-weight: 400
+      margin-bottom: 5px
+    &__img
+      max-width: 280px
+      margin-bottom: 10px
+    &__author,
+    &__time
+      color: #444444
+      font-size: 16px
+      font-weight: 400
+      line-height: 24px
+    &__author
+      margin-left: 10px
+    &__link
+      color: #000000
+      font-size: 22px
+      font-weight: 400
+      line-height: 1.2
+      margin-top: 10px
+      &:active
+        color: #9f9f9f
+    &__text
+      margin-top: 10px
+      color: #000000
+      font-size: 16px
+      font-weight: 400
+      line-height: 1.2
+    &__more
+      text-align: right
+      margin-top: 10px
+      a
+        color: #000000
+        font-size: 16px
+        font-weight: 400
+        line-height: 30px
+        text-decoration: underline
+        &:hover
+          text-decoration: none
+        &:active
+          color: #9f9f9f
+    &__hr
+      border-top: 0
+      border-bottom: 1px solid #9f9f9f
+      margin-top: 10px
+      margin-bottom: 0
+

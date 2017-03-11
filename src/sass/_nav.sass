@@ -1,6 +1,7 @@
 .site-nav
   background-color: #bbbbbb
   text-align: center
+  margin-bottom: 30px
   &__menu
     text-align: center
     +dib
@@ -12,20 +13,20 @@
       margin-left: 50px
     a
       color: #000000
-      font-family: "PF Din Text Cond Pro"
       font-size: 22px
       font-weight: 400
       line-height: 32px
       text-transform: uppercase
       text-decoration: none
-      &:hover
+      &:hover,
+      &.active
         color: #fff
       &:active
         color: #9f9f9f
+      &.active
   &__cart
     float: right
     color: #ffffff
-    font-family: "PF Din Text Cond Pro"
     font-size: 22px
     font-weight: 400
     &-link
@@ -43,7 +44,7 @@
     &-info
       +dib
       background-color: #fc2db7
-      padding: 9px 15px
+      padding: 10px 15px
       font-size: 18px
       text-align: left
       a

@@ -1,0 +1,16 @@
+.breadcrumb
+  margin-left: 40px
+  &__item
+    +dib
+    & + &
+      &:before
+        content: '>'
+        display: inline-block
+        color: #9f9f9f
+        font-size: 16px
+        font-weight: 400
+        margin-right: 4px
+  &__link
+    color: #9f9f9f
+    font-size: 16px
+    font-weight: 400

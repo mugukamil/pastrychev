@@ -1,0 +1,100 @@
+.site-footer
+  background-color: #828282
+  margin-top: 50px
+  padding-top: 30px
+  padding-bottom: 30px
+  &__contacts
+    .icon
+      content: ''
+      display: inline-block
+    .icon-phone
+      +s(icon-phone-footer)
+      vertical-align: sub
+      margin-right: 8px
+  &__phone,
+  &__email
+    display: inline-block
+    a
+      font-weight: 400
+      color: #e2e2e2
+      font-size: 22px
+      text-transform: uppercase
+    strong
+      color: #ffffff
+      font-size: 26px
+  &__email
+    margin-left: 25px
+    a
+      color: #fff
+      text-transform: none
+  &__social
+    +dib
+    margin-right: 50px
+    margin-left: 180px
+    li
+      +dib
+      & + li
+        margin-left: 25px
+      .icon
+        content: ''
+        +dib
+        @each $cls in inst, fb, vk
+          &.icon-#{$cls}
+            +s(icon-#{$cls}-footer)
+            &:hover
+              +s(icon-#{$cls}-footer--hover)
+            &:active
+              +s(icon-#{$cls}-footer--release)
+  &__question
+    margin-bottom: 20px
+    +dib
+    a
+      color: #fff
+      font-size: 22px
+      font-weight: 400
+      &:hover
+        .icon
+          +s(icon-question-footer--hover)
+      &:active
+        color: #9f9f9f
+        .icon
+          +s(icon-question-footer--release)
+      .icon
+        content: ''
+        margin-right: 15px
+        display: inline-block
+        vertical-align: bottom
+        +s(icon-question-footer)
+  &__nav
+    margin-top: 20px
+    margin-bottom: 20px
+    background-color: #666
+    text-align: center
+    ul
+      text-align: center
+      +dib
+    li
+      +dib
+      padding-top: 19px
+      padding-bottom: 14px
+      & + li
+        margin-left: 70px
+      a
+        color: #fff
+        font-size: 22px
+        font-weight: 400
+        line-height: 32px
+        text-transform: uppercase
+        text-decoration: none
+        &:hover
+          color: #000
+        &:active
+          color: #9f9f9f
+  &__copy
+    color: #e2e2e2
+    font-size: 16px
+    font-weight: 400
+
+
+
+

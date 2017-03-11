@@ -3,6 +3,30 @@
   width: 856px
   height: 520px
   background-color: #fff
+  .slick-prev,
+  .slick-next
+    position: absolute
+    top: 40%
+    background-color: transparent
+    z-index: 10
+    font-size: 0
+    &:active
+      border-color: #9f9f9f
+  .slick-prev
+    left: -20px
+    +arr(33, 38, #828282, l)
+    &:hover
+      border-color: transparent #fc2db7 transparent
+    &:active
+      border-color: transparent #9f9f9f transparent
+  .slick-next
+    right: -20px
+    +arr(33, 38, #828282, r)
+    &:hover
+      border-color: transparent transparent transparent #fc2db7
+    &:active
+      border-color: transparent transparent transparent #9f9f9f
+
   .slider
     &__in
       height: 520px

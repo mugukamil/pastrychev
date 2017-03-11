@@ -1,0 +1,15 @@
+---
+title: Каталог
+bodyClass: catalog-page
+---
+extends layouts/_layout
+block content
+  .content
+    ul.breadcrumb
+      li.breadcrumb__item
+        a.breadcrumb__link(href="") Главная
+      li.breadcrumb__item
+        a.breadcrumb__link(href="") Блог PASTRYCHEF
+
+    include partials/_pagination
+    include partials/_footer

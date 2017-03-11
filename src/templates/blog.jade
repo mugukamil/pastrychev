@@ -1,0 +1,21 @@
+---
+title: Блог
+bodyClass: blog-page
+---
+extends layouts/_layout
+block content
+  .content
+    ul.breadcrumb
+      li.breadcrumb__item
+        a.breadcrumb__link(href="") Главная
+      li.breadcrumb__item
+        a.breadcrumb__link(href="") Блог PASTRYCHEF
+
+    include partials/_blog-section
+    include partials/_pagination
+    .container
+      hr.section__hr.section__hr--pink
+    include partials/_blog-nav
+    .container
+      hr.section__hr.section__hr--pink
+    include partials/_footer

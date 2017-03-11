@@ -22,16 +22,43 @@ a
   &:active
     text-decoration: underline
 
+.text-center
+  text-align: center
+
 .section
   & + .section
     margin-top: 40px
   &__title
-    color: #444444
     font-family: "PF Din Text Cond Pro"
     font-size: 30px
     font-weight: 400
     line-height: 40px
     text-transform: uppercase
+    a
+      color: #444444
+      &:hover
+        color: #fc2db7
+        text-decoration: none
+      &:active
+        color: #9f9f9f
+
   &__hr
     border-top: 0
     border-bottom: 1px solid #eee
+    &--pink
+      border-color: #fb2cb6
+
+.btn
+  &--more
+    margin-top: 20px
+    padding: 10px 15px
+    color: #eeeeee
+    font-size: 22px
+    font-weight: 400
+    background-color: #828282
+    &:hover
+      background-color: #fc2db7
+    &:active
+      background-color: #9f9f9f
+
+

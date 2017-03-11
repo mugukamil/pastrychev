@@ -97,27 +97,6 @@
     display: none;
 }
 
-.slick-prev,
-.slick-next {
-    position: absolute;
-    top: 40%;
-    width: 33px;
-    height: 38px;
-    background-color: transparent;
-    z-index: 10;
-    font-size: 0;
-}
-
-.slick-prev {
-    background-image: url(../img/icon-prev.png);
-    left: -20px;
-}
-
-.slick-next {
-    background-image: url(../img/icon-next.png);
-    right: -20px;
-}
-
 .slick-dots {
     text-align: center;
     position: absolute;
@@ -143,5 +122,23 @@
 
     button {
         font-size: 0;
+    }
+}
+
+.slick-prev {
+    &:hover {
+        border-color: transparent #fc2db7 transparent;
+    }
+    &:active {
+        border-color: transparent #9f9f9f transparent;
+    }
+}
+
+.slick-next {
+    &:hover {
+        border-color: transparent transparent transparent #fc2db7;
+    }
+    &:active {
+        border-color: transparent transparent transparent #9f9f9f;
     }
 }
