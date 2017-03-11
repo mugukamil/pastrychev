@@ -224,22 +224,22 @@ html {
 
 @font-face {
   font-family: "pfdin-regular";
-  src: url("../fonts/pfdintextcondpro-regular.woff2") format("woff2"), url("../fonts/pfdintextcondpro-regular.woff") format("woff");
+  src: url("fonts/pfdintextcondpro-regular.woff2") format("woff2"), url("fonts/pfdintextcondpro-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "pfdin-italic";
-  src: url("../fonts/pfdintextcondpro-italic.woff2") format("woff2"), url("../fonts/pfdintextcondpro-italic.woff") format("woff");
+  src: url("fonts/pfdintextcondpro-italic.woff2") format("woff2"), url("fonts/pfdintextcondpro-italic.woff") format("woff");
 }
 
 @font-face {
   font-family: "tt0248";
-  src: url("../fonts/tt0248m.woff2") format("woff2"), url("../fonts/tt0248m.woff") format("woff");
+  src: url("fonts/tt0248m.woff2") format("woff2"), url("fonts/tt0248m.woff") format("woff");
 }
 
 @font-face {
   font-family: "tt0249";
-  src: url("../fonts/tt0249m.woff2") format("woff2"), url("../fonts/tt0249m.woff") format("woff");
+  src: url("fonts/tt0249m.woff2") format("woff2"), url("fonts/tt0249m.woff") format("woff");
 }
 
 body {
