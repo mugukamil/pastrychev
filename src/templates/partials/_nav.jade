@@ -7,6 +7,10 @@ nav.site-nav
         li
           if i == 1 && bodyClass == 'blog-page'
             a.active(href="") #{link}
+          if i == 0 && bodyClass == 'catalog-page'
+            a.active(href="") #{link}
+          if i == 3 && bodyClass == 'delivery-page'
+            a.active(href="") #{link}
           else
             a(href='#') #{link}
     .site-nav__cart

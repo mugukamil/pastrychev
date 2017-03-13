@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
 h6, p, blockquote, pre, a, abbr, acronym, address, big,
 cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
@@ -244,12 +245,12 @@ html {
 
 body {
   background-color: #eee;
-  min-width: 1254px;
+  min-width: 1260px;
   font-family: 'pfdin-regular', sans-serif;
 }
 
 .container {
-  width: 1254px;
+  width: 1260px;
   margin: auto;
 }
 
@@ -279,12 +280,23 @@ a:active {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.mr40 {
+  margin-right: 40px;
+}
+
+.ml40 {
+  margin-left: 40px;
+}
+
 .section + .section {
   margin-top: 40px;
 }
 
 .section__title {
-  font-family: "PF Din Text Cond Pro";
   font-size: 30px;
   font-weight: 400;
   line-height: 40px;
@@ -328,6 +340,146 @@ a:active {
 
 .btn--more:active {
   background-color: #9f9f9f;
+}
+
+.right-col {
+  width: 820px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.right-col__title {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.right-col__hr {
+  border-top: 0;
+  border-bottom: 1px solid #9f9f9f;
+}
+
+.right-col .breadcrumb {
+  margin-left: 0;
+  margin-bottom: 25px;
+}
+
+.simple-page .breadcrumb {
+  margin-left: 0;
+  margin-bottom: 25px;
+}
+
+.simple-page__title {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.simple-page__subtitle {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.simple-page__hr {
+  border-top: 0;
+  border-bottom: 1px solid #9f9f9f;
+  margin-bottom: 20px;
+}
+
+.simple-page__section a {
+  color: black;
+  text-decoration: underline;
+}
+
+.simple-page__section a:hover {
+  text-decoration: none;
+}
+
+.simple-page__section a:active {
+  color: #9f9f9f;
+}
+
+.simple-page .section__title {
+  color: #444;
+}
+
+.simple-page__section-desc {
+  margin-bottom: 25px;
+}
+
+.list {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.list > li {
+  margin-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.list--unordered li:before {
+  content: '•';
+  display: inline-block;
+  vertical-align: baseline;
+  color: #fc2db7;
+  margin-right: 4px;
+}
+
+.list--ordered {
+  counter-reset: list;
+}
+
+.list--ordered > li {
+  color: #000000;
+  font-size: 22px;
+}
+
+.list--ordered > li:before {
+  counter-increment: list;
+  content: counter(list) ".";
+  display: inline-block;
+  vertical-align: baseline;
+  color: #fc2db7;
+  margin-right: 5px;
+}
+
+.list--ordered > li li {
+  font-size: 16px;
+}
+
+.list--simple > li {
+  font-size: 22px;
+}
+
+.list--simple > li li {
+  font-size: 16px;
+}
+
+.list__item + .list__item {
+  margin-top: 15px;
+}
+
+.list__item--highlighted {
+  background-color: #fff;
+  color: #fc2db7;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.list__item--highlighted p {
+  color: black;
+  font-size: 16px;
 }
 
 .site-header {
@@ -418,6 +570,7 @@ a:active {
   height: 28px;
   background-position: -220px 0px;
   margin-right: 8px;
+  vertical-align: inherit;
 }
 
 .site-header__phone a {
@@ -590,7 +743,7 @@ a:active {
   color: #eeeeee;
   font-size: 22px;
   font-weight: 400;
-  padding: 10px 15px;
+  padding: 7px 15px;
   vertical-align: top;
 }
 
@@ -607,6 +760,16 @@ a:active {
   margin-top: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.site-footer__contacts {
+  *zoom: 1;
+}
+
+.site-footer__contacts:after {
+  content: " ";
+  display: table;
+  clear: both;
 }
 
 .site-footer__contacts .icon {
@@ -774,6 +937,11 @@ a:active {
   background-position: -176px -88px;
 }
 
+.site-footer__right {
+  float: right;
+  margin-right: 40px;
+}
+
 .site-footer__nav {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -931,7 +1099,6 @@ a:active {
 .fav__item {
   *zoom: 1;
   color: #000000;
-  font-family: "PF Din Text Cond Pro";
   font-size: 18px;
   font-weight: 400;
 }
@@ -1044,7 +1211,6 @@ a:active {
   padding-right: 25px;
   padding-top: 20px;
   color: #000000;
-  font-family: "PF Din Text Cond Pro";
   font-weight: 400;
 }
 
@@ -1385,7 +1551,6 @@ a:active {
 }
 
 .pagination {
-  text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -1411,6 +1576,146 @@ a:active {
 
 .pagination__item a.active:hover {
   color: #010001;
+}
+
+.sidebar {
+  width: 380px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+
+.sidebar__link {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.sidebar__link:hover {
+  color: #fc2db7;
+  text-decoration: none;
+}
+
+.sidebar__link:active {
+  color: #9f9f9f;
+}
+
+.catalog__filter {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.catalog__filter-text {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 40px;
+}
+
+.catalog__filter-list {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.catalog__filter-list li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.catalog__filter-list li + li {
+  margin-left: 40px;
+}
+
+.catalog__filter-list li a {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.catalog__filter-list li a:hover, .catalog__filter-list li a.active {
+  color: #fc2db7;
+  text-decoration: none;
+}
+
+.catalog__filter-list li a:active {
+  color: #9f9f9f;
+}
+
+.catalog__filter-list li a.up:after {
+  content: '';
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 5px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 6px 11px 6px;
+  border-color: transparent transparent #fc2db7 transparent;
+}
+
+.catalog__filter-list li a.down:after {
+  content: '';
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 5px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 11px 6px 0 6px;
+  border-color: #fc2db7 transparent transparent transparent;
+}
+
+.catalog__list {
+  margin-top: 20px;
+}
+
+.catalog__item {
+  width: 180px !important;
+  position: relative;
+  height: 250px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.catalog__item + div {
+  margin-left: 20px;
+}
+
+.catalog__item:nth-child(4n + 1) {
+  margin-left: 0;
+}
+
+.catalog__item:nth-child(n + 5) {
+  margin-top: 35px;
+}
+
+.catalog__img {
+  max-width: 100%;
+  height: 135px;
+  margin-bottom: 5px;
+}
+
+.catalog__link {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.catalog__link:active {
+  color: #9f9f9f;
+}
+
+.catalog__price {
+  color: #444444;
+  font-size: 22px;
+  font-weight: 400;
+  position: absolute;
+  right: 18px;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=app.css.map */

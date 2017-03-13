@@ -1,0 +1,38 @@
+.right-col.catalog
+  ul.breadcrumb
+    li.breadcrumb__item
+      a.breadcrumb__link(href="") Главная
+    li.breadcrumb__item
+      a.breadcrumb__link(href="") Каталог
+  h1.right-col__title Каталог
+  .catalog__filter
+    span.catalog__filter-text Сортировать:
+    ul.catalog__filter-list
+      li: a(href="") по Новизне
+      li: a.active.up(href="") по Цене
+      li: a(href="") по Популярности
+  hr.right-col__hr
+  .catalog__list
+    -for (let i = 0; i < 3; i++)
+      -var items = [[{ link: 'Рельефные листы для шоколада (KIT1), 4 шт.', price: '420.00 руб.'}], [{ link:'Какао-масло в каллетах Callebaut', price:'490.00 руб.'}], [{ link:'Подложка круглая золото/жемчуг, толщина 1,5 мм', price:'14.00 руб.'}], [{ link:'Миндальная мука мелкого помола DGF, 1 кг', price:'1 350.00 руб.'}], [{ link:'Коробка для торта (255*255*120)', price:'40.00 руб.'}], [{ link:'Коробка для торта (325*325*120)', price: '420.00 руб.'}]]
+      each item, i in items
+        .catalog__item
+          img.catalog__img(src="img/news#{i+1}.png", alt="")
+          p: a.catalog__link(href="#" ) #{item[0].link}
+          p.catalog__price #{item[0].price}
+  hr.right-col__hr
+  .pagination.text-right.mr40
+    ul
+      -for (let i = 1; i <= 67; i++)
+        if (i == 6)
+          li.pagination__item ...
+        else if (i == 1)
+          li.pagination__item
+            a.active(href="") 1
+        else if (i > 5 && i < 65)
+        else
+          li.pagination__item
+            a(href="")= i
+
+
+
