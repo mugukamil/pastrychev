@@ -60,4 +60,17 @@ $(window).load(function(){
     })
 })
 
+$('.catalog__filter-list').on('click', 'a', function(e) {
+    e.preventDefault()
+    var $this = $(this)
+
+    if ($this.hasClass('down')) {
+        $this.removeClass('down').addClass('up')
+    } else if ($this.hasClass('up')) {
+        $this.removeClass('up').addClass('down')
+    } else {
+        $this.addClass('up')
+    }
+})
+
 })
