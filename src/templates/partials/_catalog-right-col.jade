@@ -2,9 +2,16 @@
   ul.breadcrumb
     li.breadcrumb__item
       a.breadcrumb__link(href="") Главная
-    li.breadcrumb__item
-      a.breadcrumb__link(href="") Каталог
-  h1.right-col__title Каталог
+    if fromSearch
+      li.breadcrumb__item
+        a.breadcrumb__link(href="") Результаты поиска по запросу "шОКОЛАД"
+    else
+      li.breadcrumb__item
+        a.breadcrumb__link(href="") Каталог
+  if fromSearch
+    h1.right-col__title Результаты поиска по запросу "шОКОЛАД"
+  else
+    h1.right-col__title Каталог
   .catalog__filter
     span.catalog__filter-text Сортировать:
     ul.catalog__filter-list
@@ -13,7 +20,7 @@
       li: a(href="") по Популярности
   hr.right-col__hr
   .catalog__list
-    -for (let i = 0; i < 3; i++)
+    -for (let i = 0; i < 4; i++)
       -var items = [[{ link: 'Рельефные листы для шоколада (KIT1), 4 шт.', price: '420.00 руб.'}], [{ link:'Какао-масло в каллетах Callebaut', price:'490.00 руб.'}], [{ link:'Подложка круглая золото/жемчуг, толщина 1,5 мм', price:'14.00 руб.'}], [{ link:'Миндальная мука мелкого помола DGF, 1 кг', price:'1 350.00 руб.'}], [{ link:'Коробка для торта (255*255*120)', price:'40.00 руб.'}], [{ link:'Коробка для торта (325*325*120)', price: '420.00 руб.'}]]
       each item, i in items
         .catalog__item

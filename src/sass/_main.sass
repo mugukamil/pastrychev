@@ -30,9 +30,12 @@ a
 
 .mr40
   margin-right: 40px
-
 .ml40
   margin-left: 40px
+.pr40
+  padding-right: 40px
+.pl40
+  padding-left: 40px
 
 .section
   & + .section
@@ -57,7 +60,8 @@ a
       border-color: #fb2cb6
 
 .btn
-  &--more
+  &--more,
+  &--submit
     margin-top: 20px
     padding: 10px 15px
     color: #eeeeee
@@ -87,7 +91,6 @@ a
 
 .simple-page
   .breadcrumb
-    margin-left: 0
     margin-bottom: 25px
   &__title
     color: #000000
@@ -165,4 +168,76 @@ a
       p
         color: black
         font-size: 16px
+
+.col-1,
+.col-2
+  +dib
+  width: 615px
+
+.col-1
+  margin-right: 20px
+  font-weight: 400
+  color: #000000
+  font-size: 22px
+  color: #000000
+  p
+    & + p
+      margin-top: 10px
+    a
+      text-decoration: none
+  address
+    font-style: normal
+    margin-bottom: 10px
+  small
+    font-size: 16px
+    font-style: normal
+  .text-highlighted
+    font-size: 22px
+    line-height: 30px
+    background-color: #fff
+    color: #fc2db7
+    padding-top: 10px
+    padding-bottom: 15px
+    padding-left: 40px
+    margin-bottom: 25px
+
+.section.section--iframe
+  margin-top: 80px
+
+.iframe
+  +dib
+  &--fb
+    margin-top: 50px
+  & + &
+    margin-left: 50px
+
+.form
+  padding-right: 20px
+  text-align: center
+  input[type='text'],
+  input[type='email']
+    height: 40px
+    background-color: #ffffff
+    color: #444444
+    font-size: 18px
+    font-weight: 400
+    width: 600px
+    margin-left: 20px
+    padding-left: 20px
+    padding-right: 20px
+  textarea
+    color: #444444
+    font-size: 18px
+    font-weight: 400
+    height: 340px
+    background-color: #ffffff
+    padding-left: 20px
+    resize: none
+    width: 1220px
+    margin-left: 20px
+    border: none
+    margin-top: 20px
+    padding-bottom: 10px
+    padding-top: 10px
+    padding-right: 20px
 

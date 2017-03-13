@@ -17,24 +17,26 @@
           color: #000000
           font-size: 22px
           font-weight: 400
-          &:hover,
+          &:hover
+            color: #fc2db7
+            text-decoration: none
           &.active
             color: #fc2db7
             text-decoration: none
+            &.up:after
+              content: ''
+              display: inline-block
+              vertical-align: baseline
+              margin-left: 5px
+              +arr(12, 11, #fc2db7, t)
+            &.down:after
+              content: ''
+              display: inline-block
+              vertical-align: baseline
+              margin-left: 5px
+              +arr(12, 11, #fc2db7, b)
           &:active
             color: #9f9f9f
-          &.up:after
-            content: ''
-            display: inline-block
-            vertical-align: baseline
-            margin-left: 5px
-            +arr(12, 11, #fc2db7, t)
-          &.down:after
-            content: ''
-            display: inline-block
-            vertical-align: baseline
-            margin-left: 5px
-            +arr(12, 11, #fc2db7, b)
   &__list
     margin-top: 20px
     margin-bottom: 20px

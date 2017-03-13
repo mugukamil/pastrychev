@@ -1,0 +1,26 @@
+---
+title: Задать вопрос
+bodyClass: ask-page
+---
+extends layouts/_layout
+block content
+  .content.simple-page
+    .container
+      ul.breadcrumb.ml40
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Главная
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Задать вопрос
+      h1.simple-page__title.ml40 Задать вопрос
+      section.section.simple-page__section
+        form.form.ask-form(action="")
+          input(type="text" placeholder="Имя")
+          input(type="email" placeholder="E-mail")
+          textarea(name="" placeholder="Сообщение")
+          input.btn.btn--submit(type="submit", value="Отправить")
+
+
+
+
+
+    include partials/_footer

@@ -64,15 +64,17 @@ $('.catalog__filter-list').on('click', 'a', function(e) {
     e.preventDefault()
     var $this = $(this)
 
-    $this.closest('.catalog__filter-list').find('a').removeClass('active down up')
+    $this.closest('.catalog__filter-list').find('a').removeClass('active')
+    $this.addClass('active')
 
     if ($this.hasClass('down')) {
         $this.removeClass('down').addClass('up')
     } else if ($this.hasClass('up')) {
         $this.removeClass('up').addClass('down')
     } else {
-        $this.addClass('active up')
+        $this.addClass('down')
     }
+
 })
 
 })
