@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Задать вопрос</title>
+    <title>Вход</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" media="all" href="css/app.css">
   </head>
 
-  <body class="ask-page">
+  <body class="login-page">
     <header class="site-header">
       <div class="container">
         <div class="site-header__logo">
@@ -65,11 +65,13 @@
       <div class="container">
         <ul class="breadcrumb ml40">
           <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Главная</a></li>
-          <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Задать вопрос</a></li>
+          <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Вход</a></li>
         </ul>
-        <h1 class="simple-page__title ml40">Задать вопрос</h1>
+        <h1 class="simple-page__title ml40">Вход</h1>
         <section class="section simple-page__section">
-          <form action="" class="form ask-form"><input type="text" placeholder="Имя" class="form__input"><input type="email" placeholder="E-mail" class="form__input"><textarea name="" placeholder="Сообщение"></textarea><input type="submit" value="Отправить" class="btn btn--submit"></form>
+          <form action="" class="form form--block ml40"><input type="email" placeholder="E-mail" class="form__input"><input type="password" placeholder="Пароль" class="form__input">
+            <p class="form__text"><a href="">Забыли пароль?</a></p>
+            <p class="form__text">Еще нет аккаунта?&nbsp;<a href="">Зарегистрироваться</a></p><input type="submit" value="Войти" class="btn btn--submit"></form>
         </section>
       </div>
       <footer class="site-footer">
