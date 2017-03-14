@@ -555,17 +555,22 @@ a:active {
   text-align: center;
 }
 
-.form input[type='text'],
-.form input[type='email'] {
+.form__input {
   height: 40px;
   background-color: #ffffff;
   color: #444444;
   font-size: 18px;
   font-weight: 400;
+  font-family: 'pfdin-regular';
   width: 600px;
   margin-left: 20px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.form__text {
+  margin-bottom: 5px;
+  font-size: 18px;
 }
 
 .form textarea {
@@ -583,6 +588,17 @@ a:active {
   padding-bottom: 10px;
   padding-top: 10px;
   padding-right: 20px;
+}
+
+.form--block {
+  margin-bottom: 70px;
+}
+
+.form--block .form__input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .site-header {
