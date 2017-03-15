@@ -1425,7 +1425,7 @@ a:active {
 .news .slick-prev,
 .hits .slick-prev,
 .partners .slick-prev {
-  left: -20px;
+  left: -30px;
   width: 0px;
   height: 0px;
   border-style: solid;
