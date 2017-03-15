@@ -28,6 +28,9 @@ a
 .text-right
   text-align: right
 
+.text-left
+  text-align: left
+
 .mr40
   margin-right: 40px
 .ml40
@@ -214,13 +217,14 @@ a
 .form
   padding-right: 20px
   text-align: center
+  input
+    font-family: 'pfdin-regular'
   &__input
     height: 40px
     background-color: #ffffff
     color: #444444
     font-size: 18px
     font-weight: 400
-    font-family: 'pfdin-regular'
     width: 600px
     margin-left: 20px
     padding-left: 20px
@@ -243,6 +247,7 @@ a
     padding-bottom: 10px
     padding-top: 10px
     padding-right: 20px
+    font-family: 'pfdin-regular'
   &--block
     margin-bottom: 70px
     .form__input
@@ -251,4 +256,10 @@ a
       margin-right: auto
       margin-bottom: 20px
 
-
+@each $cls in fb-small, vk-small
+  .icon-#{$cls}
+    +s(icon-#{$cls})
+    &:hover
+      +s(icon-#{$cls}--hover)
+    &:active
+      +s(icon-#{$cls}--release)
