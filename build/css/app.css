@@ -1600,35 +1600,35 @@ a:active {
   margin-top: 17px;
 }
 
-.blog .post {
+.blog .blog-post {
   display: inline-block;
   vertical-align: top;
 }
 
-.blog .post__category {
+.blog .blog-post__category {
   color: #9f9f9f;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.blog .post__img {
+.blog .blog-post__img {
   max-width: 280px;
   margin-bottom: 10px;
 }
 
-.blog .post__author, .blog .post__time {
+.blog .blog-post__author, .blog .blog-post__time {
   color: #444444;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.blog .post__author {
+.blog .blog-post__author {
   margin-left: 10px;
 }
 
-.blog .post__link {
+.blog .blog-post__link {
   color: #000000;
   font-size: 22px;
   font-weight: 400;
@@ -1636,11 +1636,11 @@ a:active {
   margin-top: 10px;
 }
 
-.blog .post__link:active {
+.blog .blog-post__link:active {
   color: #9f9f9f;
 }
 
-.blog .post__text {
+.blog .blog-post__text {
   margin-top: 10px;
   color: #000000;
   font-size: 16px;
@@ -1648,12 +1648,12 @@ a:active {
   line-height: 1.2;
 }
 
-.blog .post__more {
+.blog .blog-post__more {
   text-align: right;
   margin-top: 10px;
 }
 
-.blog .post__more a {
+.blog .blog-post__more a {
   color: #000000;
   font-size: 16px;
   font-weight: 400;
@@ -1661,15 +1661,15 @@ a:active {
   text-decoration: underline;
 }
 
-.blog .post__more a:hover {
+.blog .blog-post__more a:hover {
   text-decoration: none;
 }
 
-.blog .post__more a:active {
+.blog .blog-post__more a:active {
   color: #9f9f9f;
 }
 
-.blog .post__hr {
+.blog .blog-post__hr {
   border-top: 0;
   border-bottom: 1px solid #9f9f9f;
   margin-top: 10px;
