@@ -1,6 +1,8 @@
 .blog
+  &.section
+    margin-top: 50px
   .blog-page &
-    margin-top: 40px
+    margin-top: 16px
   &__links
     text-align: center
     margin-top: 15px
@@ -34,10 +36,16 @@
   .blog-post
     +dib
     &__category
-      color: #9f9f9f
-      font-size: 16px
-      font-weight: 400
       margin-bottom: 5px
+      a
+        color: #9f9f9f
+        font-size: 16px
+        font-weight: 400
+        &:hover
+          color: #fc2db7
+          text-decoration: none
+        &:active
+          color: #9f9f9f
     &__img
       max-width: 280px
       margin-bottom: 10px

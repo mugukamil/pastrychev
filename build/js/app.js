@@ -43,7 +43,6 @@ $('.slider').slick({
 $('.slider-six').slick({
     slidesToShow: 6,
     slidesToScroll: 1,
-    // infinite: true
 })
 
 $('.slider-four').slick({
@@ -55,7 +54,7 @@ $(window).load(function(){
 
     $('.grid').masonry({
       itemSelector: '.grid-item',
-      columnWidth: 280,
+      columnWidth: 278,
       gutter: 20
     })
 })

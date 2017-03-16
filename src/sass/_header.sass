@@ -1,37 +1,40 @@
 .site-header
   margin-top: 20px
-  margin-bottom: 40px
+  margin-bottom: 34px
   &__logo
     +dib
     margin-right: 20px
+    margin-left: 20px
   .slogan
     +dib
-    margin-top: 80px
+    margin-top: 84px
     color: #444444
     font-weight: 400
     text-transform: uppercase
     &__text-border
       display: inline-block
       font-size: 22px
-      padding-top: 20px
+      padding-top: 10px
       border-top: 1px solid #9f9f9f
+      margin-bottom: 10px
     &__text-big
       font-size: 30px
-      line-height: 40px
+      line-height: 37px
   &__right
     float: right
     +dib
+    margin-top: 2px
+    margin-right: 25px
   &__login
     text-align: right
-    margin-bottom: 15px
-    margin-right: 20px
+    margin-bottom: 26px
+    margin-right: 23px
     li
       display: inline-block
-      vertical-align: middle
       & + li:before
         content: ''
         display: inline-block
-        vertical-align: middle
+        vertical-align: bottom
         width: 1px
         height: 30px
         background-color: #9f9f9f
@@ -45,16 +48,16 @@
       &:active
         color: #9f9f9f
   &__contacts
-    margin-bottom: 10px
+    margin-bottom: 15px
   &__phone
     +dib
-    margin-right: 25px
+    margin-right: 21px
     .icon
       display: inline-block
       +s(icon-phone)
       margin-right: 8px
       vertical-align: inherit
-    a
+    span
       font-weight: 400
       text-transform: uppercase
       color: #444444
@@ -75,7 +78,7 @@
   &__social
     +dib
     margin-right: 50px
-    margin-left: 180px
+    margin-left: 173px
     li
       +dib
       & + li
@@ -91,7 +94,6 @@
             &:active
               +s(icon-#{$cls}--release)
   &__question
-    margin-bottom: 20px
     +dib
     a
       color: #000000
@@ -111,6 +113,7 @@
         vertical-align: bottom
         +s(icon-question)
   &__search
+    margin-top: 23px
     input[type='search']
       width: 498px
       height: 40px

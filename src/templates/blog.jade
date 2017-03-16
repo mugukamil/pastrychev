@@ -5,11 +5,12 @@ bodyClass: blog-page
 extends layouts/_layout
 block content
   .content
-    ul.breadcrumb
-      li.breadcrumb__item
-        a.breadcrumb__link(href="") Главная
-      li.breadcrumb__item
-        a.breadcrumb__link(href="") Блог PASTRYCHEF
+    .container
+      ul.breadcrumb
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Главная
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Блог PASTRYCHEF
 
     include partials/_blog-section
     include partials/_pagination

@@ -7,6 +7,7 @@ section.section.hits
       -for (let j = 0; j < 3; j++)
         each n, i in news
           .slider-six__in
-            img.slider-six__img(src="img/news#{i+1}.png", alt="")
+            a(href="")
+              img.slider-six__img(src="img/news#{i+1}.png", alt="")
             p: a.slider-six__link(href="#" ) #{n[0].link}
             p.slider-six__price #{n[0].price}

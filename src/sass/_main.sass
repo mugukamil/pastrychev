@@ -5,11 +5,13 @@
 
 body
     background-color: #eee
-    min-width: 1260px
+    min-width: 1254px
+    font-family: 'pfdin-regular', sans-serif
+input
     font-family: 'pfdin-regular', sans-serif
 
 .container
-    width: 1260px
+    width: 1254px
     margin: auto
 
 .clr
@@ -35,6 +37,10 @@ a
   margin-right: 40px
 .ml40
   margin-left: 40px
+.mr20
+  margin-right: 20px
+.ml20
+  margin-left: 20px
 .pr40
   padding-right: 40px
 .pl40
@@ -66,7 +72,7 @@ a
   &--more,
   &--submit
     margin-top: 20px
-    padding: 10px 15px
+    padding: 7px 37px
     color: #eeeeee
     font-size: 22px
     font-weight: 400
@@ -94,7 +100,7 @@ a
 
 .simple-page
   .breadcrumb
-    margin-bottom: 25px
+    margin-bottom: 17px
   &__title
     color: #000000
     font-size: 30px
@@ -108,7 +114,7 @@ a
     font-weight: 400
     text-transform: uppercase
     text-align: center
-    margin-bottom: 40px
+    margin-bottom: 28px
   &__hr
     border-top: 0
     border-bottom: 1px solid #9f9f9f
@@ -225,12 +231,12 @@ a
     color: #444444
     font-size: 18px
     font-weight: 400
-    width: 600px
+    width: 597px
     margin-left: 20px
     padding-left: 20px
     padding-right: 20px
   &__text
-    margin-bottom: 5px
+    margin-bottom: 17px
     font-size: 18px
   textarea
     color: #444444
@@ -240,7 +246,7 @@ a
     background-color: #ffffff
     padding-left: 20px
     resize: none
-    width: 1220px
+    width: 1213px
     margin-left: 20px
     border: none
     margin-top: 20px
@@ -263,3 +269,15 @@ a
       +s(icon-#{$cls}--hover)
     &:active
       +s(icon-#{$cls}--release)
+
+.form--login
+  margin-left: 26px
+  input[type='submit']
+    margin-top: 8px
+    padding: 7px 52px
+
+.form--reg
+  margin-top: 37px
+  input[type='submit']
+    margin-top: 7px
+    padding: 7px 15px
