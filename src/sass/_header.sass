@@ -1,0 +1,134 @@
+.site-header
+  margin-top: 20px
+  margin-bottom: 40px
+  &__logo
+    +dib
+    margin-right: 20px
+  .slogan
+    +dib
+    margin-top: 80px
+    color: #444444
+    font-weight: 400
+    text-transform: uppercase
+    &__text-border
+      display: inline-block
+      font-size: 22px
+      padding-top: 20px
+      border-top: 1px solid #9f9f9f
+    &__text-big
+      font-size: 30px
+      line-height: 40px
+  &__right
+    float: right
+    +dib
+  &__login
+    text-align: right
+    margin-bottom: 15px
+    margin-right: 20px
+    li
+      display: inline-block
+      vertical-align: middle
+      & + li:before
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        width: 1px
+        height: 30px
+        background-color: #9f9f9f
+        margin-left: 10px
+        margin-right: 15px
+    a
+      height: 17px
+      color: #000000
+      font-size: 18px
+      font-weight: 400
+      &:active
+        color: #9f9f9f
+  &__contacts
+    margin-bottom: 10px
+  &__phone
+    +dib
+    margin-right: 25px
+    .icon
+      display: inline-block
+      +s(icon-phone)
+      margin-right: 8px
+      vertical-align: inherit
+    a
+      font-weight: 400
+      text-transform: uppercase
+      color: #444444
+      font-size: 22px
+      strong
+        color: #000000
+        font-size: 26px
+        font-weight: 400
+  &__email
+    display: inline-block
+    vertical-align: bottom
+    a
+      color: #000
+      font-size: 26px
+      font-weight: 400
+      &:active
+        color: #9f9f9f
+  &__social
+    +dib
+    margin-right: 50px
+    margin-left: 180px
+    li
+      +dib
+      & + li
+        margin-left: 25px
+      .icon
+        content: ''
+        +dib
+        @each $cls in inst, fb, vk
+          &.icon-#{$cls}
+            +s(icon-#{$cls})
+            &:hover
+              +s(icon-#{$cls}--hover)
+            &:active
+              +s(icon-#{$cls}--release)
+  &__question
+    margin-bottom: 20px
+    +dib
+    a
+      color: #000000
+      font-size: 22px
+      font-weight: 400
+      &:hover
+        .icon
+          +s(icon-question--hover)
+      &:active
+        color: #9f9f9f
+        .icon
+          +s(icon-question--release)
+      .icon
+        content: ''
+        margin-right: 15px
+        display: inline-block
+        vertical-align: bottom
+        +s(icon-question)
+  &__search
+    input[type='search']
+      width: 498px
+      height: 40px
+      background-color: #ffffff
+      padding-left: 10px
+      padding-right: 10px
+      font-size: 16px
+      font-weight: 400
+    input[type='submit']
+      height: 40px
+      background-color: #828282
+      color: #eeeeee
+      font-size: 22px
+      font-weight: 400
+      padding: 7px 15px
+      vertical-align: top
+      &:hover
+        background-color: #fc2db7
+      &:active
+        background-color: #9f9f9f
+

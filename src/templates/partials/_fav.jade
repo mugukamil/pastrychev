@@ -1,0 +1,10 @@
+section.section.fav
+  .container
+    .fav__list
+      h1.section__title: a(href="#") Избранное
+      ul
+        each fav in [['fav1', 'Dresden Stollen'], ['fav2', 'Лимонный тарт с паннакоттой'], ['fav3', 'Тарт с черной смородиной и фисташковым кремом'], ['fav4', 'Тарт с ванильным кремом и свежими фруктами']]
+          li.fav__item
+            img.fav__img(src="img/#{fav[0]}.png", alt="#{fav[0]}")
+            a.fav__link(href="#") #{fav[1]}
+    include _main-slider

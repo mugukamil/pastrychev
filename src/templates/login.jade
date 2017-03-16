@@ -1,0 +1,29 @@
+---
+title: Вход
+bodyClass: login-page
+---
+extends layouts/_layout
+block content
+  .content.simple-page
+    .container
+      ul.breadcrumb.ml40
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Главная
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Вход
+      h1.simple-page__title.ml40 Вход
+      section.section.simple-page__section
+        form.form.form--block.ml40(action="")
+          input.form__input(type="email" placeholder="E-mail")
+          input.form__input(type="password" placeholder="Пароль")
+          p.form__text
+            a(href="") Забыли пароль?
+          p.form__text Еще нет аккаунта?&nbsp;
+            a(href="") Зарегистрироваться
+          input.btn.btn--submit(type="submit", value="Войти")
+
+
+
+
+
+    include partials/_footer

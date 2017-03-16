@@ -1,0 +1,24 @@
+-var links = ['Каталог', 'Блог PastRyChef', 'Обучение', 'Доставка и оплата', 'Контакты']
+
+nav.site-nav
+  .container
+    ul.site-nav__menu
+      each link, i in links
+        li
+          if i == 1 && bodyClass == 'blog-page'
+            a.active(href="") #{link}
+          else if i == 0 && bodyClass == 'catalog-page'
+            a.active(href="") #{link}
+          else if i == 3 && bodyClass == 'delivery-page'
+            a.active(href="") #{link}
+          else if i == 4 && bodyClass == 'contacts-page'
+            a.active(href="") #{link}
+          else
+            a(href='#') #{link}
+    .site-nav__cart
+      a.site-nav__cart-link(href="#") Корзина
+      .site-nav__cart-info
+        p 15 товаров, 17089 руб.
+        a(href="#") Оформить заказ
+
+

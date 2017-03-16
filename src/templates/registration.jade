@@ -1,0 +1,31 @@
+---
+title: Регистрация
+bodyClass: register-page
+---
+extends layouts/_layout
+block content
+  .content.simple-page
+    .container
+      ul.breadcrumb.ml40
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Главная
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Регистрация
+      h1.simple-page__title.ml40 Регистрация
+      section.section.simple-page__section
+        form.form.form--block.ml40(action="")
+          input.form__input(type="text" placeholder="Имя")
+          input.form__input(type="text" placeholder="Фамилия")
+          input.form__input(type="tel" placeholder="Телефон")
+          input.form__input(type="email" placeholder="E-mail")
+          input.form__input(type="password" placeholder="Пароль")
+          input.form__input(type="password" placeholder="Повторите пароль")
+          p.form__text Уже зарегестрированы?&nbsp;
+            a(href="") Авторизоваться
+          input.btn.btn--submit(type="submit", value="Зарегистрироваться")
+
+
+
+
+
+    include partials/_footer

@@ -1,0 +1,136 @@
+.post
+  &__header
+    +clr
+    margin-bottom: 20px
+    .post__share
+      +dib
+      float: right
+  &__content
+    margin-bottom: 40px
+    .post__share
+      margin-top: 30px
+  &__category
+    color: #9f9f9f
+    font-size: 16px
+    font-weight: 400
+    margin-right: 15px
+    &:hover
+      color: #fc2db7
+      text-decoration: none
+    &:active
+      color: #9f9f9f
+  &__time
+    margin-right: 10px
+  &__time,
+  &__author
+    color: #444444
+    font-size: 16px
+    font-weight: 400
+    line-height: 24px
+  &__meta
+    +dib
+  &__share
+    span
+      display: inline-block
+      vertical-align: super
+      margin-right: 15px
+  &__social
+    display: inline-block
+    li
+      display: inline-block
+      & + li
+        margin-left: 15px
+    .icon
+      display: inline-block
+  &__img
+    margin-top: 20px
+    margin-bottom: 20px
+  &__text
+    color: #000000
+    font-size: 16px
+    font-weight: 400
+    p + p
+      margin-top: 20px
+
+.reviews
+  &__header
+    +clr
+    h1
+      display: inline-block
+      color: #444444
+      font-size: 30px
+      font-weight: 400
+      line-height: 40px
+      text-transform: uppercase
+  &__leave-feedback
+    float: right
+    color: #000000
+    font-size: 22px
+    font-weight: 400
+    line-height: 40px
+    &:active
+      color: #9f9f9f
+  &__list
+    margin-bottom: 15px
+    > li
+      & + li
+        margin-top: 30px
+  &__form
+    text-align: left
+    input:first-child
+      margin-right: 20px
+    textarea
+      width: 1128px
+      height: 108px
+    .reviews__stars--form
+      display: inline-block
+      margin-top: 8px
+      li
+        +dib
+      a:hover
+        .icon-star
+          +s(icon-star--hover)
+      .icon-star
+        display: inline-block
+        +s(icon-star--grey)
+
+.review
+  &__content
+    margin-left: 80px
+  &__header
+    +clr
+    h1
+      font-weight: 400
+      color: #000000
+      font-size: 22px
+      float: left
+      line-height: 0
+    time
+      margin-left: 10px
+      color: #444444
+      font-size: 16px
+      line-height: 24px
+  &__img
+    float: left
+  &__text
+    color: #000000
+    font-size: 16px
+    margin-top: -30px
+  &__stars
+    float: right
+    li
+      +dib
+    .icon-star
+      display: inline-block
+      +s(icon-star--hover)
+
+.blog--simple
+  &__header
+    +clr
+    h1
+      display: inline-block
+      color: #444444
+      font-size: 30px
+      font-weight: 400
+      line-height: 40px
+      text-transform: uppercase

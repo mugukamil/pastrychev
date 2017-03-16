@@ -1,0 +1,87 @@
+---
+title: Блог
+bodyClass: blog-page
+---
+extends layouts/_layout
+block content
+  .content.simple-page
+    .container
+      ul.breadcrumb
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Главная
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Блог PASTRYCHEF
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Кондитерский мир в лицах
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Кондитерский ресторан Сары Барбер
+      article.post
+        h1.post__title.simple-page__title.ml40 Кондитерский ресторан Сары Барбер
+        header.post__header.ml40.mr40
+          .post__meta
+            a.post__category(href="") Кондитерский мир в лицах
+            time.post__time(datetime="01-02-2017") 01/02/2017
+            span.post__author Автор: Елена Комболина
+          .post__share
+            span Поделиться:
+            ul.post__social
+              li: a(href=""): i.icon.icon-fb-small
+              li: a(href=""): i.icon.icon-vk-small
+        .post__content.ml40.mr40
+          .post__img.text-center
+            img(src="img/post-img1.png", alt="")
+          .post__text
+            p В Лондоне, на фешенебельной Риджент-стрит, в историческом отеле Cafe Royal, расположен необычный ресторан. Вернее, днем заведение The Café работает как обычная – то есть, разумеется, очень хорошая! – кондитерская, а вечером превращается в ресторан, где первым, вторым, третьим и всеми последующими курсами подаются десерты.
+
+            p Первый в Лондоне кондитерский ресторан – идея шеф-кондитера отеля Sarah Barber. Сара один из лучших кондитеров британской столицы. Окончив колледж, около двадцати лет она проработала в самых разных местах: лучших кондитерских магазинах, пятизвездочных гостиницах, "мишленовских" ресторанах. Ее стиль называют игривым, но он основан на глубоких знаниях и огромном опыте.
+
+            p "Я не могу представить себе другую карьеру, – говорит Сара. – Это в моей крови, это то, чем я живу и дышу каждый день. Мой дед был поваром, и он дал мне ключ к вдохновению. Я начала работать с тестом в восемнадцать лет, из всех областей кулинарии эта область всегда казалась мне самой спокойной, контролируемой, технически совершенной и творческой. Именно в пекарне я обнаружила, что сама могу творить".
+          .post__img.text-center
+            img(src="img/post-img2.png", alt="")
+          .post__text
+            p Начав работать в The Café, Сара решила попробовать создать новый формат и сформировать меню, предлагающее полноценный обед из одних только сладостей. Карамель Baileys с горячим белым шоколадом, лимонное конфи с черным трюфелем, "козий" чизкейк, мандариновый саварен, кокосово-гранатовый мильфей, чатни из айвы, грибной капуччино... Когда на первое, второе и третье вы получаете десерты, они не должны быть слишком сладкими. Поэтому Сара активно использует фрукты и овощи, в меню присутствуют артишоки, ревень, свекла, грибы, сыр.
+
+            p Десерт из брокколи со свеклой? Почему бы и нет! Главное – найти идеальный баланс между сладкими и солеными ингредиентами. "Когда я составляю меню, я всегда опираюсь на сезонные плоды, стараюсь использовать больше овощей, меньше шоколада и сахара". Нынешнее меню The Café включает три дегустационных сета. Один из них называется "Сара в Стране чудес" и полностью отражает путь женщины-кондитера, исследующей мир непредвзятым, пытливым детским взглядом.
+          .post__img.text-center
+            img(src="img/post-img3.png", alt="")
+          .post__text
+            p Любимый творческий прием Сары – использование "парных" вкусов. Она берет свои излюбленные классические сочетания – малина и розовый личи, шоколад и цитрусовые – и на их основе создает новые современные десерты. Ей нравятся сочетания вишни с кунжутом и лимона юзу с йогуртом. Но любимого десерта у Сары нет: невозможно назвать что-то самым лучшим в постоянно меняющемся мире кондитерского искусства.
+          .post__share.text-center
+            span Поделиться:
+            ul.post__social
+              li: a(href=""): i.icon.icon-fb-small
+              li: a(href=""): i.icon.icon-vk-small
+      .reviews
+        header.reviews__header.ml40.mr40
+          h1 Отзывы
+          a.reviews__leave-feedback(href="") Оставить отзыв
+        hr.simple-page__hr
+        ul.reviews__list.ml40.mr40
+          -for (let i = 1; i < 4; i++)
+            li.review
+              img.review__img(src="img/review-img#{i}.png", alt="")
+              .review__content
+                header.review__header
+                  h1 Анастасия Павловна
+                    time(datetime="01-02-2017") 01/02/2017
+                  ul.review__stars
+                    -for (let i = 0; i < 5; i++)
+                      li: i.icon.icon-star
+                .review__text
+                  p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+        hr.simple-page__hr
+        form.form.reviews__form.ml40
+          input.form__input.text-left(type="text" placeholder="Имя")
+          ul.reviews__stars.reviews__stars--form
+            -for (let i = 0; i < 5; i++)
+              li: a(href=""): i.icon.icon-star
+          textarea(placeholder="Оставить отзыв")
+          .text-center
+            input.btn.btn--submit(type="submit", value="Отправить")
+    include partials/_post-blog-section
+
+
+
+
+
+    include partials/_footer

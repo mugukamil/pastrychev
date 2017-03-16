@@ -1,0 +1,60 @@
+.site-nav
+  background-color: #bbbbbb
+  text-align: center
+  margin-bottom: 30px
+  &__menu
+    text-align: center
+    +dib
+  li
+    +dib
+    padding-top: 19px
+    padding-bottom: 14px
+    & + li
+      margin-left: 50px
+    a
+      color: #000000
+      font-size: 22px
+      font-weight: 400
+      line-height: 32px
+      text-transform: uppercase
+      text-decoration: none
+      &:hover,
+      &.active
+        color: #fff
+      &:active
+        color: #9f9f9f
+      &.active
+  &__cart
+    float: right
+    color: #ffffff
+    font-size: 22px
+    font-weight: 400
+    &-link
+      +dib
+      background-color: #fc2db7
+      padding: 19px 20px
+      margin-right: -3px
+      text-transform: uppercase
+      color: #ffffff
+      &:hover
+        background-color: #828282
+        text-decoration: none
+      &:active
+        background-color: #9f9f9f
+    &-info
+      +dib
+      background-color: #fc2db7
+      padding: 10px 15px
+      font-size: 18px
+      text-align: left
+      a
+        color: #ffffff
+        font-size: 18px
+        font-weight: 400
+        text-decoration: underline
+        &:hover
+          text-decoration: none
+        &:active
+          color: #9f9f9f
+          text-decoration: none
+

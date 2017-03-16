@@ -1,0 +1,11 @@
+section.section.partners
+  .container
+    h1.section__title: a(href="") Партнеры
+    hr.section__hr
+    .slider-four
+      -var prts = ['Silikomart Professional', 'Pavoni', 'DGF Royal', 'Ponthier']
+      -for (let j = 0; j < 3; j++)
+        each prt, i in prts
+          .slider-four__in
+            img.slider-four__img(src="img/prt#{i+1}.png", alt="")
+            a.slider-four__link(href="#" ) #{prt}
