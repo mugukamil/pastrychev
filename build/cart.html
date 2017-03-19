@@ -67,14 +67,18 @@
           <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Главная</a></li>
           <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Корзина</a></li>
         </ul>
-        <h1 class="simple-page__title">Корзина</h1><a href="" class="btn clear-cart">Очистить корзину</a>
+        <header class="clr mr40"><a href="" class="btn clear-cart simple-page__link">Очистить корзину</a>
+          <h1 class="simple-page__title">Корзина</h1>
+        </header>
         <section class="section simple-page__section cart">
           <form action="">
-            <div class="cart-list">
+            <div class="cart-list ml40 mr40">
               <div class="cart-item">
                 <div class="cart-item__left"><img src="img/news6.png" alt="" class="cart__img">
-                  <p class="cart__product-name">Какао-масло в каллетах Callebaut</p>
-                  <p class="cart__product-size product-size">Упаковка</p><select class="product__size-select product-select"><option value="150">150 гр.</option><option value="300">300 гр.</option><option value="450">450 гр.</option></select></div>
+                  <div class="cart__product-info">
+                    <p class="cart__product-name">Какао-масло в каллетах Callebaut</p>
+                    <p class="cart__product-size product-size">Упаковка</p><select class="product__size-select product-select"><option value="150">150 гр.</option><option value="300">300 гр.</option><option value="450">450 гр.</option></select></div>
+                </div>
                 <div class="cart__price">
                   <p>Цена</p>
                   <p class="product-price">450.00 руб.</p>
@@ -85,11 +89,13 @@
                   <p>Стоимость</p>
                   <p class="product-price">900.00 руб.</p>
                 </div>
-                <div class="cart__remove-item"><a href="" class="btn">Удалить товар</a></div>
+                <div class="cart__remove-item"><a href="" class="btn simple-page__link">Удалить товар</a></div>
               </div>
               <div class="cart-item">
                 <div class="cart-item__left"><img src="img/news5.png" alt="" class="cart__img">
-                  <p class="cart__product-name">Рельефные листы для шоколада (KIT1), 4 шт.</p>
+                  <div class="cart__product-info">
+                    <p class="cart__product-name cart__product-name--big-margin">Рельефные листы для шоколада (KIT1), 4 шт.</p>
+                  </div>
                 </div>
                 <div class="cart__price">
                   <p>Цена</p>
@@ -101,11 +107,13 @@
                   <p>Стоимость</p>
                   <p class="product-price">420.00 руб.</p>
                 </div>
-                <div class="cart__remove-item"><a href="" class="btn">Удалить товар</a></div>
+                <div class="cart__remove-item"><a href="" class="btn simple-page__link">Удалить товар</a></div>
               </div>
               <div class="cart-item">
                 <div class="cart-item__left"><img src="img/news4.png" alt="" class="cart__img">
-                  <p class="cart__product-name">Нина Тарасова "По дороге из карамельных пластинок"</p>
+                  <div class="cart__product-info">
+                    <p class="cart__product-name cart__product-name--big-margin">Нина Тарасова "По дороге из карамельных пластинок"</p>
+                  </div>
                 </div>
                 <div class="cart__price">
                   <p>Цена</p>
@@ -117,20 +125,20 @@
                   <p>Стоимость</p>
                   <p class="product-price">4290.00 руб.</p>
                 </div>
-                <div class="cart__remove-item"><a href="" class="btn">Удалить товар</a></div>
+                <div class="cart__remove-item"><a href="" class="btn simple-page__link">Удалить товар</a></div>
               </div>
             </div>
             <hr class="simple-page__hr cart__hr">
             <div class="cart__info">
-              <div action="" class="cart__promo"><input type="text" placeholder="Введите промо-код" class="input-promo"><input type="submit" value="ОК"></div>
-              <div class="cart__total">
-                <p>Сумма</p>
+              <div action="" class="cart__promo"><input type="text" placeholder="Введите промо-код" class="input-promo"><input type="submit" value="ОК" class="btn btn--submit"></div>
+              <div class="cart__total mr40">
+                <p class="cart__total-sum">Сумма</p>
                 <p class="product-price">5610.00 руб.</p>
-                <p>Скидка, налог и цена доставки будут рассчитаны при оформлении заказа.</p>
+                <p class="cart__total-info">Скидка, налог и цена доставки будут рассчитаны при оформлении заказа.</p>
               </div>
             </div>
             <hr class="simple-page__hr cart__hr">
-            <div class="cart__submit"><input type="submit" value="Оформить заказ"></div>
+            <div class="cart__submit text-right"><input type="submit" value="Оформить заказ" class="btn btn--submit"></div>
           </form>
         </section>
       </div>

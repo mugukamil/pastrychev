@@ -100,6 +100,15 @@ a
     margin-bottom: 25px
 
 .simple-page
+  &__link.btn
+    color: #9f9f9f
+    font-size: 16px
+    font-weight: 400
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+    &:active
+      color: #ddd
   .breadcrumb
     margin-bottom: 17px
     .blog-page &
@@ -303,3 +312,149 @@ a
 .index-page
   .btn--more
     padding: 7px 18px
+
+.train-page
+  .blog--simple
+    .btn--more
+      padding: 7px 22px
+  .simple-page__title
+    margin-bottom: 30px
+  .train-form
+    .form__input
+      width: 319px
+      height: 40px
+      +placeholder
+        color: #444444
+        font-size: 18px
+        font-weight: 400
+    input.btn--submit
+      padding: 5px 19px 8px 19px
+      margin-top: 0
+  .post__header
+    margin-bottom: 18px
+  .post__content
+    .post__share
+      margin-left: 86px
+  .post__img
+    margin-top: 20px
+  .post__text
+    &-big
+      font-size: 22px
+      span
+        font-size: 16px
+        display: block
+    &--pink
+      color: #fc2db7
+    .train-form
+      text-align: left
+      input
+        margin-left: 0
+        margin-top: 20px
+        margin-bottom: 20px
+
+
+
+.cart-page
+  .clear-cart
+    float: right
+    margin-top: 15px
+
+.cart
+  &-list
+    margin-bottom: 38px
+    margin-top: 10px
+  &-item
+    +clr
+    & + &
+      margin-top: 39px
+    &__left
+      +dib
+      width: 502px
+      margin-right: 60px
+  &__img
+    width: 179px
+    height: 134px
+    +dib
+    margin-right: 17px
+  &__product-info
+    +dib
+  &__product-name
+    margin-top: 19px
+    font-size: 18px
+    max-width: 300px
+    &--big-margin
+      margin-top: 83px
+
+  &__product-size
+    margin-top: 21px
+    margin-bottom: 13px
+  &__price,
+  &-item__total
+    margin-top: 55px
+    margin-right: 85px
+    +dib
+    font-weight: 400
+    line-height: 40px
+    color: #000000
+    font-size: 16px
+    .product-price
+      color: #444444
+      font-size: 22px
+  &-item__total
+    margin-right: 0
+  &__qty
+    margin-right: 55px
+    margin-top: 65px
+    +dib
+    .product-qty-input
+      margin-top: 10px
+  &__remove-item
+    float: right
+    +dib
+    margin-top: 106px
+  &__info
+    float: right
+    margin-bottom: 25px
+  &__total
+    margin-left: 61px
+    +dib
+    &-sum
+      font-size: 22px
+      font-weight: 400
+      line-height: 40px
+      color: #000000
+    .product-price
+      color: #444444
+      font-size: 22px
+      margin-bottom: 36px
+    &-info
+      width: 225px
+      color: #fc2db7
+      font-size: 16px
+      font-weight: 400
+  &__promo
+    margin-top: 15px
+    +dib
+    .input-promo
+      width: 259px
+      height: 40px
+      background-color: #ffffff
+      color: #444444
+      font-size: 18px
+      font-weight: 400
+      padding-left: 20px
+      padding-right: 20px
+      +placeholder
+        color: #444444
+        font-size: 18px
+        font-weight: 400
+    input[type='submit']
+      padding: 5px 18px 8px 18px
+  &__hr
+    clear: both
+  &__submit
+    margin-right: 60px
+    margin-bottom: 63px
+    input
+      padding-left: 39px
+      padding-right: 38px

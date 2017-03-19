@@ -11,19 +11,21 @@ block content
           a.breadcrumb__link(href="") Главная
         li.breadcrumb__item
           a.breadcrumb__link(href="") Корзина
-      h1.simple-page__title Корзина
-      a.btn.clear-cart(href="") Очистить корзину
+      header.clr.mr40
+        a.btn.clear-cart.simple-page__link(href="") Очистить корзину
+        h1.simple-page__title Корзина
       section.section.simple-page__section.cart
         form(action="")
-          .cart-list
+          .cart-list.ml40.mr40
             .cart-item
               .cart-item__left
                 img.cart__img(src="img/news6.png", alt="")
-                p.cart__product-name Какао-масло в каллетах Callebaut
-                p.cart__product-size.product-size Упаковка
-                select.product__size-select.product-select
-                  -for (let i = 1; i < 4; i++)
-                    option(value="#{i * 150}") #{i * 150} гр.
+                .cart__product-info
+                  p.cart__product-name Какао-масло в каллетах Callebaut
+                  p.cart__product-size.product-size Упаковка
+                  select.product__size-select.product-select
+                    -for (let i = 1; i < 4; i++)
+                      option(value="#{i * 150}") #{i * 150} гр.
               .cart__price
                 p Цена
                 p.product-price 450.00 руб.
@@ -34,11 +36,12 @@ block content
                 p Стоимость
                 p.product-price 900.00 руб.
               .cart__remove-item
-                a.btn(href="") Удалить товар
+                a.btn.simple-page__link(href="") Удалить товар
             .cart-item
               .cart-item__left
                 img.cart__img(src="img/news5.png", alt="")
-                p.cart__product-name Рельефные листы для шоколада (KIT1), 4 шт.
+                .cart__product-info
+                  p.cart__product-name.cart__product-name--big-margin Рельефные листы для шоколада (KIT1), 4 шт.
               .cart__price
                 p Цена
                 p.product-price 420.00 руб.
@@ -49,11 +52,12 @@ block content
                 p Стоимость
                 p.product-price 420.00 руб.
               .cart__remove-item
-                a.btn(href="") Удалить товар
+                a.btn.simple-page__link(href="") Удалить товар
             .cart-item
               .cart-item__left
                 img.cart__img(src="img/news4.png", alt="")
-                p.cart__product-name Нина Тарасова "По дороге из карамельных пластинок"
+                .cart__product-info
+                  p.cart__product-name.cart__product-name--big-margin Нина Тарасова "По дороге из карамельных пластинок"
               .cart__price
                 p Цена
                 p.product-price 4290.00 руб.
@@ -64,19 +68,19 @@ block content
                 p Стоимость
                 p.product-price 4290.00 руб.
               .cart__remove-item
-                a.btn(href="") Удалить товар
+                a.btn.simple-page__link(href="") Удалить товар
           hr.simple-page__hr.cart__hr
           .cart__info
             .cart__promo(action="")
               input.input-promo(type="text" placeholder="Введите промо-код")
-              input(type="submit", value="ОК")
-            .cart__total
-              p Сумма
+              input.btn.btn--submit(type="submit", value="ОК")
+            .cart__total.mr40
+              p.cart__total-sum Сумма
               p.product-price 5610.00 руб.
-              p Скидка, налог и цена доставки будут рассчитаны при оформлении заказа.
+              p.cart__total-info Скидка, налог и цена доставки будут рассчитаны при оформлении заказа.
           hr.simple-page__hr.cart__hr
-          .cart__submit
-            input(type="submit", value="Оформить заказ")
+          .cart__submit.text-right
+            input.btn.btn--submit(type="submit", value="Оформить заказ")
 
 
 

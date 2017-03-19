@@ -1,0 +1,50 @@
+---
+title: Блог
+bodyClass: blog-page train-blog
+---
+extends layouts/_layout
+block content
+  .content
+    .container
+      ul.breadcrumb
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Главная
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Обучение
+
+      section.section.blog
+        .container
+          h1.section__title.text-center Обучение
+          hr.section__hr.section__hr--pink
+          ul.blog__links
+            each link in ['Мастер-классы', 'Семинары', 'Курсы', 'Повышение квалификации', 'Профессиональная подготовка', 'Тренинги']
+              li
+                a(href="#")= link
+          hr.section__hr.section__hr--pink
+          .blog__posts.grid.ml40.mr40
+            -for (let i = 0; i < 5; i++)
+              each post, i in [[{link: 'Кондитерский ресторан Сары Барбер', category: 'Новости'}], [{link: 'Pierre Marcolini открыл шоколадный бар в Париже', category: 'Кондитерский мир в лицах'}], [{link: 'Выставка Sirha 2017: территория вдохновения', category: 'Тренды'}], [{link: 'Что нового? Кондитерские тренды года', category: 'События'}]]
+                .blog__post.blog-post.grid-item
+                  p.blog-post__category: a(href="")= post[0].category
+                  a(href="")
+                    img.blog-post__img(src="img/blog#{i + 1}.png", alt="blog-post")
+                  p
+                    time.blog-post__time(datetime="01-02-2017" pubdate) 01/02/2017
+                    span.blog-post__author Автор: Елена Комболина
+                  p: a.blog-post__link(href="#")= post[0].link
+                  p.blog-post__text В Лондоне, на фешенебельной Риджент-стрит, в историческом отеле Cafe Royal, расположен необычный ресторан. Вернее, днем заведение The Café работает как обычная – то есть, разумеетс...
+                  p.blog-post__more: a(href="#") Подробнее
+                  hr.blog-post__hr
+
+
+
+    include partials/_pagination
+    .container
+      hr.section__hr.section__hr--pink
+      ul.blog__links
+        each link in ['Мастер-классы', 'Семинары', 'Курсы', 'Повышение квалификации', 'Профессиональная подготовка', 'Тренинги']
+          li
+            a(href="#")= link
+    .container
+      hr.section__hr.section__hr--pink
+    include partials/_footer

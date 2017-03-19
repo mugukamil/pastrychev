@@ -1,0 +1,77 @@
+---
+title: Каталог
+bodyClass: catalog-page product-page
+---
+extends layouts/_layout
+block content
+  .content
+    .container
+      include partials/_sidebar
+      .right-col.catalog.product
+        ul.breadcrumb
+          li.breadcrumb__item
+            a.breadcrumb__link(href="") Главная
+          li.breadcrumb__item
+            a.breadcrumb__link(href="") Каталог
+          li.breadcrumb__item
+            a.breadcrumb__link(href="") Шоколад и какао-продукты
+          li.breadcrumb__item
+            a.breadcrumb__link(href="") Какао-масло в каллетах Callebaut
+
+        h1.right-col__title Какао-масло в каллетах Callebaut
+        .product__item
+          .product__slider.product-slider
+            .product-slider__slide
+              img(src="img/product-slide.png", alt="")
+              img(src="img/product-slide.png", alt="")
+            .product-slider__nav
+              img(src="img/product-slide.png", alt="")
+              img(src="img/product-slide.png", alt="")
+          .product__info.product__info--no-product
+            p.product__price.product-price 450.00 руб.
+            .product__size.product-size
+              p Упаковка
+              select.product__size-select.product-select
+                -for (let i = 1; i < 4; i++)
+                  option(value="#{i * 150}") #{i * 150} гр.
+            .product__qty.product-qty
+              p Товара нет в наличии
+              input.product__qty-input.product-qty-input(type="email", name="" placeholder="Введите e-mail")
+            .product__cart
+              button.btn.btn--submit.product__cart--btn Сообщить о поступлении
+            .product__chars
+              p.
+                Натуральное масло какао 100%.
+                Хранить в герметично закрытой упаковке в прохладном месте при температуре не выше 18С.
+              p.
+                Срок хранения: 2 года
+                Упаковка: ведерко 250 гр. или 500 гр.
+                Производитель: Callebaut, Бельгия
+          .share.product__share
+            span Поделиться:
+            ul.share__social
+              li: a(href=""): i.icon.icon-fb-small
+              li: a(href=""): i.icon.icon-vk-small
+
+          .product__desc
+            p.
+              This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+
+            p.
+              Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.
+        include partials/_reviews
+
+        .product__related
+          header
+            h1 С этим товаром часто покупают
+          hr.simple-page__hr
+          .catalog__list
+            -for (let i = 0; i < 2; i++)
+              -var items = [[{ link: 'Рельефные листы для шоколада (KIT1), 4 шт.', price: '420.00 руб.'}], [{ link:'Какао-масло в каллетах Callebaut', price:'490.00 руб.'}], [{ link:'Подложка круглая золото/жемчуг, толщина 1,5 мм', price:'14.00 руб.'}], [{ link:'Миндальная мука мелкого помола DGF, 1 кг', price:'1 350.00 руб.'}], [{ link:'Коробка для торта (255*255*120)', price:'40.00 руб.'}], [{ link:'Коробка для торта (325*325*120)', price: '420.00 руб.'}]]
+              each item, i in items
+                .catalog__item
+                  img.catalog__img(src="img/news#{i+1}.png", alt="")
+                  p: a.catalog__link(href="#" ) #{item[0].link}
+                  p.catalog__price #{item[0].price}
+
+    include partials/_footer

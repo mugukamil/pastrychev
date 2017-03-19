@@ -25,6 +25,24 @@
   &__info
     width: 278px
     +dib
+    .product__qty
+      p
+        color: #fc2db7
+        font-size: 22px
+        font-weight: 400
+      input
+        width: 278px
+        color: #444444
+        font-size: 18px
+        font-weight: 400
+        +placeholder
+          color: #444444
+          font-size: 18px
+          font-weight: 400
+    .product__cart
+      margin-top: 20px
+    .product__cart--btn
+      padding: 7px 16px
   &__price
     color: #444444
     font-size: 30px
@@ -40,29 +58,6 @@
       font-weight: 400
   &__size
     margin-bottom: 20px
-  &__size-select
-    +custom-select-reset
-    width: 278px
-    height: 40px
-    color: #444444
-    font-size: 18px
-    font-weight: 400
-    padding-left: 20px
-    background: #ffffff url(../img/arr.png) 93% 58% no-repeat
-    cursor: pointer
-    &:hover
-      background: #ffffff url(../img/arr-hover.png) 93% 58% no-repeat
-    &:active
-      background: #ffffff url(../img/arr-release.png) 93% 58% no-repeat
-  &__qty-input
-    width: 139px
-    height: 40px
-    background-color: #ffffff
-    padding-left: 20px
-    padding-right: 20px
-    color: #444444
-    font-size: 18px
-    font-weight: 400
   &__cart
     text-align: center
     margin-top: 40px
@@ -102,3 +97,28 @@
   textarea
     width: 729px
     height: 108px
+
+.product-select
+  +custom-select-reset
+  width: 278px
+  height: 40px
+  color: #444444
+  font-size: 18px
+  font-weight: 400
+  padding-left: 20px
+  background: #ffffff url(../img/arr.png) 93% 58% no-repeat
+  cursor: pointer
+  &:hover
+    background: #ffffff url(../img/arr-hover.png) 93% 58% no-repeat
+  &:active
+    background: #ffffff url(../img/arr-release.png) 93% 58% no-repeat
+
+.product-qty-input
+  width: 139px
+  height: 40px
+  background-color: #ffffff
+  padding-left: 20px
+  padding-right: 20px
+  color: #444444
+  font-size: 18px
+  font-weight: 400
