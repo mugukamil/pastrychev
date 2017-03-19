@@ -1,0 +1,104 @@
+.product
+  &__slider
+    +dib
+    width: 478px
+    margin-right: 20px
+  &-slider
+    margin-bottom: 36px
+    &__slide
+      margin-bottom: 16px
+      img
+        cursor: pointer
+    &__nav
+      .slick-track
+        max-width: 478px !important
+      img
+        cursor: pointer
+        width: 43px !important
+        height: 43px !important
+        &:hover
+          border: 1px solid #fc2db7
+        &:active
+          border: 1px solid #9f9f9f
+        & + img
+          margin-left: 20px
+  &__info
+    width: 278px
+    +dib
+  &__price
+    color: #444444
+    font-size: 30px
+    font-weight: 400
+    margin-top: -8px
+    margin-bottom: 29px
+  &__size,
+  &__qty
+    p
+      margin-bottom: 10px
+      color: #000000
+      font-size: 16px
+      font-weight: 400
+  &__size
+    margin-bottom: 20px
+  &__size-select
+    +custom-select-reset
+    width: 278px
+    height: 40px
+    color: #444444
+    font-size: 18px
+    font-weight: 400
+    padding-left: 20px
+    background: #ffffff url(../img/arr.png) 93% 58% no-repeat
+    cursor: pointer
+    &:hover
+      background: #ffffff url(../img/arr-hover.png) 93% 58% no-repeat
+    &:active
+      background: #ffffff url(../img/arr-release.png) 93% 58% no-repeat
+  &__qty-input
+    width: 139px
+    height: 40px
+    background-color: #ffffff
+    padding-left: 20px
+    padding-right: 20px
+    color: #444444
+    font-size: 18px
+    font-weight: 400
+  &__cart
+    text-align: center
+    margin-top: 40px
+    margin-bottom: 57px
+  &__cart--btn
+    padding: 7px 22px
+    font-family: 'pfdin-regular'
+    margin-top: 0
+  &__desc,
+  &__chars
+    p
+      color: #444444
+      font-size: 16px
+      font-weight: 400
+      & + p
+        margin-top: 20px
+  &__share
+    color: #444444
+  &__desc
+    margin-top: 38px
+  &__related
+    h1
+      font-weight: 400
+      color: #444
+      font-size: 30px
+      text-transform: uppercase
+      margin-top: 55px
+
+
+
+.product-page
+  .reviews
+    margin-top: 28px
+  .reviews__form
+    .form__input
+      width: 570px
+  textarea
+    width: 729px
+    height: 108px

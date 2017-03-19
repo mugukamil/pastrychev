@@ -1,0 +1,32 @@
+.reviews
+  if bodyClass.indexOf('product-page') > -1
+    header.reviews__header.mr40
+      h1 Отзывы
+      a.reviews__leave-feedback(href="") Оставить отзыв
+  else
+    header.reviews__header.ml40.mr40
+      h1 Отзывы
+      a.reviews__leave-feedback(href="") Оставить отзыв
+  hr.simple-page__hr
+  ul(class="reviews__list mr40 #{bodyClass.indexOf('product-page') > -1 ? '' : 'ml40'}")
+    -for (let i = 1; i < 4; i++)
+      li.review
+        img.review__img(src="img/review-img#{i}.png", alt="")
+        .review__content
+          header.review__header
+            h1 Анастасия Павловна
+              time(datetime="01-02-2017") 01/02/2017
+            ul.review__stars
+              -for (let i = 0; i < 5; i++)
+                li: i.icon.icon-star
+          .review__text
+            p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+  hr.simple-page__hr
+  form.form.reviews__form.ml40
+    input.form__input.text-left(type="text" placeholder="Имя")
+    ul.reviews__stars.reviews__stars--form
+      -for (let i = 0; i < 5; i++)
+        li: a(href=""): i.icon.icon-star
+    textarea(placeholder="Оставить отзыв")
+    .text-center
+      input.btn.btn--submit(type="submit", value="Отправить")

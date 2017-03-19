@@ -261,3 +261,22 @@
 =dib
   display: inline-block
   vertical-align: top
+
+=custom-select-reset
+  /* reset native select styles */
+  outline: 0
+  -webkit-appearance: none  // Removes default chrome and safari style
+  -moz-appearance: none  // Removes default style Firefox
+  text-indent: 0.01px // FF: Removes default arrow
+  text-overflow: '' // FF: Removes default arrow
+  border: none
+  border-radius: 0
+  /* remove arrow ie10+, but not IE9 */
+  &::-ms-expand
+      display: none
+  /* FF: removes outline */
+  &:-moz-focusring
+      color: transparent
+      text-shadow: 0 0 0 rgba(#000, .8)
+  &:focus
+      outline: 0

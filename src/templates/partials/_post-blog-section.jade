@@ -7,7 +7,7 @@ section.section.blog.blog--simple
       -for (let i = 0; i < 3; i++)
         each post, i in [[{link: 'Кондитерский ресторан Сары Барбер', category: 'Новости'}], [{link: 'Pierre Marcolini открыл шоколадный бар в Париже', category: 'Кондитерский мир в лицах'}], [{link: 'Выставка Sirha 2017: территория вдохновения', category: 'Тренды'}], [{link: 'Что нового? Кондитерские тренды года', category: 'События'}]]
           .blog__post.blog-post.grid-item
-            p.blog-post__category= post[0].category
+            p.blog-post__category: a(href="")= post[0].category
             a(href="")
               img.blog-post__img(src="img/blog#{i + 1}.png", alt="blog-post")
             p

@@ -16,15 +16,15 @@ block content
         li.breadcrumb__item
           a.breadcrumb__link(href="") Кондитерский ресторан Сары Барбер
       article.post
-        h1.post__title.simple-page__title.ml40 Кондитерский ресторан Сары Барбер
+        h1.post__title.simple-page__title Кондитерский ресторан Сары Барбер
         header.post__header.ml40.mr40
           .post__meta
             a.post__category(href="") Кондитерский мир в лицах
             time.post__time(datetime="01-02-2017") 01/02/2017
             span.post__author Автор: Елена Комболина
-          .post__share
+          .share.post__share
             span Поделиться:
-            ul.post__social
+            ul.share__social
               li: a(href=""): i.icon.icon-fb-small
               li: a(href=""): i.icon.icon-vk-small
         .post__content.ml40.mr40
@@ -46,38 +46,12 @@ block content
             img(src="img/post-img3.png", alt="")
           .post__text
             p Любимый творческий прием Сары – использование "парных" вкусов. Она берет свои излюбленные классические сочетания – малина и розовый личи, шоколад и цитрусовые – и на их основе создает новые современные десерты. Ей нравятся сочетания вишни с кунжутом и лимона юзу с йогуртом. Но любимого десерта у Сары нет: невозможно назвать что-то самым лучшим в постоянно меняющемся мире кондитерского искусства.
-          .post__share.text-center
+          .share.post__share.text-center.ml40
             span Поделиться:
-            ul.post__social
+            ul.share__social
               li: a(href=""): i.icon.icon-fb-small
               li: a(href=""): i.icon.icon-vk-small
-      .reviews
-        header.reviews__header.ml40.mr40
-          h1 Отзывы
-          a.reviews__leave-feedback(href="") Оставить отзыв
-        hr.simple-page__hr
-        ul.reviews__list.ml40.mr40
-          -for (let i = 1; i < 4; i++)
-            li.review
-              img.review__img(src="img/review-img#{i}.png", alt="")
-              .review__content
-                header.review__header
-                  h1 Анастасия Павловна
-                    time(datetime="01-02-2017") 01/02/2017
-                  ul.review__stars
-                    -for (let i = 0; i < 5; i++)
-                      li: i.icon.icon-star
-                .review__text
-                  p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
-        hr.simple-page__hr
-        form.form.reviews__form.ml40
-          input.form__input.text-left(type="text" placeholder="Имя")
-          ul.reviews__stars.reviews__stars--form
-            -for (let i = 0; i < 5; i++)
-              li: a(href=""): i.icon.icon-star
-          textarea(placeholder="Оставить отзыв")
-          .text-center
-            input.btn.btn--submit(type="submit", value="Отправить")
+      include partials/_reviews
     include partials/_post-blog-section
 
 
