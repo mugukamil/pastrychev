@@ -6,7 +6,10 @@ html
 
   body(class=bodyClass)
     block header
-      include ../partials/_header
+      if bodyClass.indexOf('order-page--auth') > -1
+        include ../partials/_header-auth
+      else
+        include ../partials/_header
     block content
 
     block scripts

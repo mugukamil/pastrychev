@@ -1,0 +1,54 @@
+---
+title: Личный кабинет
+bodyClass: cabinet-page
+---
+extends layouts/_layout
+block content
+  .content
+    .container
+      aside.main-sidebar.sidebar
+        ul.sidebar__list
+          each link, i in ['Мои заказы', 'Личные данные', 'Персональная скидка']
+            if i == 1
+              li.sidebar__item: a.sidebar__link.sidebar__link--active(href="#") #{link}
+            else
+              li.sidebar__item: a.sidebar__link(href="#") #{link}
+      .right-col
+        ul.breadcrumb
+          li.breadcrumb__item
+            a.breadcrumb__link(href="") Главная
+          li.breadcrumb__item
+            a.breadcrumb__link(href="") Личный кабинет
+          li.breadcrumb__item
+            a.breadcrumb__link(href="") Личные данные
+        h1.right-col__title Личные данные
+        form.form.form-lk(action="")
+          div.input-wrap
+            input.form__input(type="text" value="Иван")
+          div.input-wrap
+            input.form__input(type="text" value="Иванов")
+          div.input-wrap
+            input.form__input(type="tel" value="455-55-55")
+          div.input-wrap
+            input.form__input(type="email" value="ivanov@email.ru")
+          h1.subtitle Адрес доставки
+          .input-wrap
+            input.form__input.form__input169(type="text" value="123456")
+            input.form__input.form__input408(type="text" value="Российская Федерация")
+          .input-wrap
+            input.form__input.form__input(type="text" value="Санкт-Петербург")
+          .input-wrap
+            input.form__input.form__input(type="text" value="Невский проспект")
+          .input-wrap
+            input.form__input.form__input169(type="text" value="15")
+            input.form__input.form__input169(type="text" value="Корпус")
+            input.form__input.form__input169(type="text" value="77")
+          .text-center
+            input.btn.btn--submit(type="submit", value="Сохранить изменения")
+
+
+
+
+
+
+    include partials/_footer

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Оформление заказа</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+  </head>
+
+  <body class="order-page">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__logo">
+          <a href="/"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="site-header__slogan slogan">
+          <p class="slogan__text-border">Интернет-магазин</p>
+          <p class="slogan__text-big">профессиональных товаров<br>для кондитеров</p>
+        </div>
+        <div class="site-header__right clr">
+          <div class="site-header__login">
+            <ul>
+              <li><a href="#">Вход</a></li>
+              <li><a href="#">Регистрация</a></li>
+            </ul>
+          </div>
+          <div class="site-header__contacts">
+            <div class="site-header__phone"><i class="icon icon-phone"></i><span>(812)&nbsp;<strong>291-44-63,</strong></span><span>&nbsp;(931)&nbsp;<strong>255-94-86</strong></span></div>
+            <div class="site-header__email"><a href="mailto:mail@pastrychef.pro">mail@pastrychef.pro</a></div>
+          </div>
+          <div class="site-header__social">
+            <ul>
+              <li><a href=""><i class="icon icon-inst"></i></a></li>
+              <li><a href=""><i class="icon icon-fb"></i></a></li>
+              <li><a href=""><i class="icon icon-vk"></i></a></li>
+            </ul>
+          </div>
+          <div class="site-header__question"><a href=""><i class="icon icon-question"></i>Задать вопрос</a></div>
+          <div class="site-header__search">
+            <form action=""><input type="search" name="search"><input type="submit" value="Найти"></form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="site-nav">
+      <div class="container">
+        <ul class="site-nav__menu">
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Блог PastRyChef</a></li>
+          <li><a href="#">Обучение</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="site-nav__cart"><a href="#" class="site-nav__cart-link">Корзина</a>
+          <div class="site-nav__cart-info">
+            <p>15 товаров, 17089 руб.</p><a href="#">Оформить заказ</a></div>
+        </div>
+      </div>
+    </nav>
+    <div class="content simple-page">
+      <div class="container">
+        <ul class="breadcrumb ml40">
+          <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Главная</a></li>
+          <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Корзина</a></li>
+          <li class="breadcrumb__item"><a href="" class="breadcrumb__link">Оформление заказа</a></li>
+        </ul>
+        <h1 class="simple-page__title">Оформление заказа</h1>
+        <section class="section simple-page__section">
+          <h1 class="section__title ml40">Контактные данные</h1>
+          <hr class="simple-page__hr">
+          <form action="" class="form order-form">
+            <div><input type="text" placeholder="Иван" class="form__input"><input type="text" placeholder="Иванов" class="form__input"></div>
+            <div><input type="tel" placeholder="455-55-55" class="form__input"><input type="email" placeholder="ivanov@email.ru" class="form__input"></div>
+            <hr class="simple-page__hr">
+            <h1 class="section__title ml40">Способ доставки</h1>
+            <hr class="simple-page__hr">
+            <div class="ml40"><label><input type="radio" name="delivery-method">Курьерская доставка по Санкт-Петербургу</label>
+              <div><input type="text" placeholder="Улица" class="form__input form__input--req"></div>
+            </div>
+          </form>
+        </section>
+      </div>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="site-footer__contacts ml40">
+            <div class="site-footer__phone"><i class="icon icon-phone"></i><span>(812)&nbsp;<strong>291-44-63,</strong></span><span>&nbsp;(931)&nbsp;<strong>255-94-86</strong></span></div>
+            <div class="site-footer__email"><a href="mailto:mail@pastrychef.pro">mail@pastrychef.pro</a></div>
+            <div class="site-footer__right mr40">
+              <div class="site-footer__social">
+                <ul>
+                  <li><a href=""><i class="icon icon-inst"></i></a></li>
+                  <li><a href=""><i class="icon icon-fb"></i></a></li>
+                  <li><a href=""><i class="icon icon-vk"></i></a></li>
+                </ul>
+              </div>
+              <div class="site-footer__question"><a href=""><i class="icon icon-question"></i>Задать вопрос</a></div>
+            </div>
+          </div>
+        </div>
+        <nav class="site-footer__nav">
+          <div class="container">
+            <ul>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Блог PastRyChef</a></li>
+              <li><a href="#">Обучение</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="container">
+          <p class="site-footer__copy ml40">© 2017 Pastrychef.pro г.Санкт-Петербург</p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+
+</html>

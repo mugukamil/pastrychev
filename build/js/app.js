@@ -96,4 +96,38 @@ $(function() {
         }
     })
 
+    $('.reviews__stars--form a').hover(function(e) {
+        var $this = $(this)
+
+        $this.closest('li').prevAll('li').find('a').addClass('active')
+        $this.closest('li').nextAll('li').find('a').removeClass('active')
+    }, function() {
+        var $this = $(this)
+
+        $this.closest('li').siblings('li').find('a').removeClass('active')
+    })
+
+    $('.form__label--radio').on('change', 'input', function(e) {
+        var $this = $(this)
+
+        $this.closest('.method').find('.form__content').hide()
+        $this.closest('label').next('.form__content').show()
+    })
+
+    $('.order-form__next--1').click(function(e) {
+        e.preventDefault()
+        var $this = $(this)
+
+        $this.hide()
+        $this.closest('.order-form').find('.payment-method').show()
+    })
+
+    $('.order-form__next--2').click(function(e) {
+        e.preventDefault()
+        var $this = $(this)
+
+        $this.hide()
+        $this.closest('.order-form').find('.order-page__sum').show()
+    })
+
 })

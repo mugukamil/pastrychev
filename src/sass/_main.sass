@@ -98,6 +98,8 @@ a
   .breadcrumb
     margin-left: 0
     margin-bottom: 25px
+    .catalog-page &
+      margin-bottom: 18px
 
 .simple-page
   &__link.btn
@@ -198,7 +200,6 @@ a
 .col-1
   margin-right: 20px
   font-weight: 400
-  color: #000000
   font-size: 22px
   color: #000000
   p
@@ -247,7 +248,14 @@ a
     width: 597px
     margin-left: 20px
     padding-left: 20px
-    padding-right: 20px
+    padding-right: 10px
+    &169
+      width: 169px
+    &362
+      width: 362px
+    &408
+      width: 408px
+
   &__text
     margin-bottom: 17px
     font-size: 18px
@@ -332,9 +340,6 @@ a
       margin-top: 0
   .post__header
     margin-bottom: 18px
-  .post__content
-    .post__share
-      margin-left: 86px
   .post__img
     margin-top: 20px
   .post__text
@@ -458,3 +463,187 @@ a
     input
       padding-left: 39px
       padding-right: 38px
+
+.order-page
+  &.order-page--auth
+    .method
+      margin-top: 27px
+  &__sum
+    font-size: 22px
+    font-weight: 400
+    color: #000000
+    span
+      color: #444444
+      line-height: 30px
+    p:last-of-type
+      margin-top: 10px
+  .form__label--radio
+    margin-bottom: 17px
+    display: block
+    color: #000000
+    font-size: 22px
+    font-weight: 400
+    input
+      display: none
+      &:checked + span
+        width: 17px
+        height: 17px
+        display: inline-block
+        background-color: #fff
+        border: 1px solid #9f9f9f
+        border-radius: 50%
+        position: relative
+        &:hover
+          background-color: #ddd
+        &:after
+          content: ''
+          display: inline-block
+          width: 5px
+          height: 5px
+          background-color: #444
+          border-radius: 50%
+          position: absolute
+          top: 5px
+          left: 5px
+    span
+      width: 17px
+      height: 17px
+      display: inline-block
+      background-color: #fff
+      border: 1px solid #9f9f9f
+      border-radius: 50%
+      position: relative
+      margin-right: 9px
+      vertical-align: baseline
+      cursor: pointer
+      &:hover
+        background-color: #ddd
+
+  .method
+    margin-top: 43px
+    &.payment-method
+      margin-top: 33px
+  .order-form
+    text-align: left
+    .order-form__submit
+      margin-top: -27px
+      input
+        margin-top: 0
+    &__next
+      margin-bottom: 40px
+      input
+        cursor: pointer
+    div + div
+      margin-top: 20px
+    .form__input,
+    textarea
+      +placeholder
+        color: #444444
+        font-size: 18px
+        font-weight: 400
+    textarea
+      width: 1168px
+      height: 90px
+      background-color: #ffffff
+      margin-top: 0
+
+.delivery-method
+  .form__input--street
+    width: 551px
+  .form__text
+    font-size: 16px
+    font-weight: 400
+    color: #000000
+    margin-left: 40px
+    p + p
+      margin-top: 8px
+    .text-pink
+      color: #fc2db7
+  .self-delivery
+    margin-right: 20px
+    font-weight: 400
+    color: #000000
+    font-size: 16px
+    .form__text
+      margin-left: 20px
+    p
+      & + p
+        margin-top: 17px
+      &:last-child
+        margin-top: 18px
+      a
+        text-decoration: none
+    address
+      font-style: normal
+      margin-bottom: 21px
+      line-height: 1
+    small
+      font-size: 16px
+      font-style: normal
+
+
+
+
+.order-2-col
+  margin-bottom: 164px
+  &__left,
+  &__right
+    +dib
+    width: 617px
+    .form-authorize
+      text-align: left
+      padding-right: 0
+      div + div
+        margin-top: 20px
+      .form__input
+        +placeholder
+          color: #444444
+          font-size: 18px
+          font-weight: 400
+    .simple-page__subtitle
+      max-width: 400px
+      margin-left: auto
+      margin-right: auto
+      margin-top: 6px
+      margin-bottom: 24px
+  &__left
+    .btn--submit
+      padding-left: 54px
+      padding-right: 54px
+      margin-top: 0
+  &__right
+    .btn--submit
+      padding-left: 28px
+      padding-right: 28px
+      margin-top: 0
+    .form__input
+      margin-left: 17px
+
+.payment-method
+  margin-bottom: 40px
+  .form__text
+    margin-left: 20px
+    font-size: 16px
+    color: #000
+
+.form-lk
+  text-align: left
+  width: 620px
+  .form__input
+    margin-left: 0
+    +placeholder
+      color: #444444
+      font-size: 18px
+      font-weight: 400
+    & + .form__input
+      margin-left: 20px
+  .input-wrap
+    & + .input-wrap
+      margin-top: 20px
+  .subtitle
+    color: #000000
+    font-size: 22px
+    font-weight: 400
+    line-height: 50px
+    margin-top: 35px
+    margin-bottom: 2px

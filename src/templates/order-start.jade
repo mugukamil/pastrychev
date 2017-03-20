@@ -1,0 +1,43 @@
+---
+title: Оформление заказа
+bodyClass: order-page
+---
+extends layouts/_layout
+block content
+  .content.simple-page
+    .container
+      ul.breadcrumb.ml40
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Главная
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Корзина
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Оформление заказа
+
+      h1.simple-page__title Оформление заказа
+      section.section.simple-page__section.order-2-col
+        .order-2-col__left
+          h1.simple-page__subtitle Если вы зарегистрированы на сайте, Пожалуйста, авторизуйтесь:
+          form.form.form-authorize(action="")
+            div
+              input.form__input(type="email" placeholder="E-mail")
+            div
+              input.form__input(type="password" placeholder="Пароль")
+            div.text-center.ml20
+              input.btn.btn--submit(type="submit" value="Войти")
+        .order-2-col__right
+          h1.simple-page__subtitle Если вы не зарегистрированы, Пожалуйста, введите контактные данные:
+          form.form.form-authorize(action="")
+            div
+              input.form__input(type="text" placeholder="Имя")
+            div
+              input.form__input(type="text" placeholder="Фамилия")
+            div
+              input.form__input(type="tel" placeholder="Телефон")
+            div
+              input.form__input(type="email" placeholder="E-mail")
+            div.text-center.ml20
+              input.btn.btn--submit(type="submit" value="Продолжить")
+
+
+    include partials/_footer

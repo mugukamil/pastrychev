@@ -1,0 +1,174 @@
+---
+title: Оформление заказа
+bodyClass: order-page
+---
+extends layouts/_layout
+block content
+  .content.simple-page
+    .container
+      ul.breadcrumb.ml40
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Главная
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Корзина
+        li.breadcrumb__item
+          a.breadcrumb__link(href="") Оформление заказа
+
+      h1.simple-page__title Оформление заказа
+      section.section.simple-page__section
+        h1.section__title.ml40 Контактные данные
+        hr.simple-page__hr
+        form.form.order-form(action="")
+          div
+            input.form__input(type="text" placeholder="Иван")
+            input.form__input(type="text" placeholder="Иванов")
+          div
+            input.form__input(type="tel" placeholder="455-55-55")
+            input.form__input(type="email" placeholder="ivanov@email.ru")
+          .method.delivery-method
+            h1.section__title.ml40 Способ доставки
+            hr.simple-page__hr
+            div.ml40
+              label.form__label--radio
+                input(type="radio", name="delivery-method" checked)
+                span
+                Курьерская доставка по Санкт-Петербургу
+              .form__content
+                div
+                  input.form__input.form__input--req.form__input--street(type="text" placeholder="Улица*")
+                  input.form__input.form__input--req.form__input169(type="text" placeholder="Номер дома*")
+                  input.form__input.form__input--req.form__input169(type="text" placeholder="Корпус")
+                  input.form__input.form__input--req.form__input169(type="text" placeholder="Квартира или офис*")
+                div.form__text
+                  p
+                    span.text-pink *&nbsp;
+                    | поля, обязательные к заполнению
+                  p Мы свяжемся с вами, чтобы уточнить условия доставки.
+                div
+                  textarea(placeholder="Комментарии")
+            div.ml40
+              label.form__label--radio
+                input(type="radio", name="delivery-method")
+                span
+                Служба доставки "Деловые Линии" или "ПЭК"
+              .form__content(style="display: none")
+                div
+                  input.form__input.form__input--req.form__input169(type="text" placeholder="Индекс*")
+                  input.form__input.form__input--req.form__input362(type="text" placeholder="Страна*")
+                  input.form__input.form__input--req(type="text" placeholder="Город*")
+                div
+                  input.form__input.form__input--req.form__input--street(type="text" placeholder="Улица*")
+                  input.form__input.form__input--req.form__input169(type="text" placeholder="Номер дома*")
+                  input.form__input.form__input--req.form__input169(type="text" placeholder="Корпус")
+                  input.form__input.form__input--req.form__input169(type="text" placeholder="Квартира или офис*")
+                div.form__text
+                  p
+                    span.text-pink *&nbsp;
+                    | поля, обязательные к заполнению
+                  p Мы свяжемся с вами, чтобы уточнить условия доставки.
+                div
+                  textarea(placeholder="Комментарии")
+            div.ml40
+              label.form__label--radio
+                input(type="radio", name="delivery-method")
+                span
+                Почтой России
+              .form__content(style="display: none")
+                div
+                  input.form__input.form__input--req.form__input169(type="text" placeholder="Индекс*")
+                  input.form__input.form__input--req.form__input362(type="text" placeholder="Страна*")
+                  input.form__input.form__input--req(type="text" placeholder="Город*")
+
+                div
+                  input.form__input.form__input--req.form__input--street(type="text" placeholder="Улица*")
+                  input.form__input.form__input--req.form__input169(type="text" placeholder="Номер дома*")
+                  input.form__input.form__input--req.form__input169(type="text" placeholder="Корпус")
+                  input.form__input.form__input--req.form__input169(type="text" placeholder="Квартира или офис*")
+                div.form__text
+                  p
+                    span.text-pink *&nbsp;
+                    | поля, обязательные к заполнению
+                  p Мы свяжемся с вами, чтобы уточнить условия доставки.
+                div
+                  textarea(placeholder="Комментарии")
+            div.ml40.self-delivery
+              label.form__label--radio
+                input(type="radio", name="delivery-method")
+                span
+                Самовывоз в Санкт-Петербурге
+              .form__content(style="display: none")
+                div.form__text
+                  address Адрес: 194352, г. Санкт-Петербург,
+                    br
+                    | м. Проспект Просвещения, Сиреневый бульвар, д. 23, к. 2 (отдельный вход со двора - крайняя правая дверь с черной решеткой)
+                  p Телефон:&nbsp;
+                    a(href="tel:+78122914463") (812) 291-44-63
+                  p E-mail:&nbsp;
+                    a(href="mailto:mail@pastrychef.pro") mail@pastrychef.pro
+                  p График работы:&nbsp;
+                    br
+                    time(datetime="Mo,Fr 9:00-17:30") ПН-ПТ с 9.00 до 17.30
+                    br
+                    | На выходных возможен самовывоз по предварительной договоренности.
+
+                  p: span.text-pink Перед тем как приехать, позвоните и сообщите о времени своего визита!
+                div
+                  textarea(placeholder="Комментарии")
+          div.text-center.order-form__next.order-form__next--1
+            input.btn.btn--submit(type="button", value="Продолжить")
+          .method.payment-method(style="display: none")
+            h1.section__title.ml40 Способ оплаты
+            hr.simple-page__hr
+            div.ml40
+              label.form__label--radio
+                input(type="radio", name="payment-method" checked)
+                span
+                Безналичный расчет
+              .form__content
+                .form__text
+                  p Для юридических и физических лиц.
+            div.ml40
+              label.form__label--radio
+                input(type="radio", name="payment-method")
+                span
+                Оплата на карту VISA (Сбербанк)
+              .form__content(style="display: none")
+                .form__text
+                  p Для физических лиц.
+            div.ml40
+              label.form__label--radio
+                input(type="radio", name="payment-method")
+                span
+                Оплата картами VISA или Master Card при помощи сервиса Яндекс.Деньги
+              .form__content(style="display: none")
+                .form__text
+                  p Для физических лиц.
+            div.ml40
+              label.form__label--radio
+                input(type="radio", name="payment-method")
+                span
+                Оплата наличными при самовывозе из офиса или курьеру при доставке
+              .form__content(style="display: none")
+                .form__text
+                  p Для физических лиц.
+            div.text-center.order-form__next.order-form__next--2
+              input.btn.btn--submit(type="button", value="Продолжить")
+          div.ml40.order-page__sum(style="display: none")
+            hr.simple-page__hr
+            p Сумма заказа:&nbsp;
+              span 5,610.00 руб.
+            p Стоимость доставки:&nbsp;
+              span 0.00 руб.
+            p Сумма налога:&nbsp;
+              span 0.00 руб.
+            p Всего к оплате:&nbsp;
+              span 5,610.00 руб.
+            div.text-center.order-form__submit
+              input.btn.btn--submit(type="submit", value="Заказать")
+
+
+
+
+
+
+    include partials/_footer
