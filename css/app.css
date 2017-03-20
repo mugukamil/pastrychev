@@ -392,6 +392,10 @@ a:active {
   margin-bottom: 25px;
 }
 
+.catalog-page .right-col .breadcrumb {
+  margin-bottom: 18px;
+}
+
 .simple-page__link.btn {
   color: #9f9f9f;
   font-size: 16px;
@@ -536,7 +540,6 @@ a:active {
 .col-1 {
   margin-right: 20px;
   font-weight: 400;
-  color: #000000;
   font-size: 22px;
   color: #000000;
 }
@@ -606,7 +609,19 @@ a:active {
   width: 597px;
   margin-left: 20px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 10px;
+}
+
+.form__input169 {
+  width: 169px;
+}
+
+.form__input362 {
+  width: 362px;
+}
+
+.form__input408 {
+  width: 408px;
 }
 
 .form__text {
@@ -773,10 +788,6 @@ a:active {
 
 .train-page .post__header {
   margin-bottom: 18px;
-}
-
-.train-page .post__content .post__share {
-  margin-left: 86px;
 }
 
 .train-page .post__img {
@@ -993,6 +1004,327 @@ a:active {
   padding-right: 38px;
 }
 
+.order-page.order-page--auth .method {
+  margin-top: 27px;
+}
+
+.order-page__sum {
+  font-size: 22px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.order-page__sum span {
+  color: #444444;
+  line-height: 30px;
+}
+
+.order-page__sum p:last-of-type {
+  margin-top: 10px;
+}
+
+.order-page .form__label--radio {
+  margin-bottom: 17px;
+  display: block;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.order-page .form__label--radio input {
+  display: none;
+}
+
+.order-page .form__label--radio input:checked + span {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #9f9f9f;
+  border-radius: 50%;
+  position: relative;
+}
+
+.order-page .form__label--radio input:checked + span:hover {
+  background-color: #ddd;
+}
+
+.order-page .form__label--radio input:checked + span:after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #444;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.order-page .form__label--radio span {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #9f9f9f;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 9px;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+
+.order-page .form__label--radio span:hover {
+  background-color: #ddd;
+}
+
+.order-page .method {
+  margin-top: 43px;
+}
+
+.order-page .method.payment-method {
+  margin-top: 33px;
+}
+
+.order-page .order-form {
+  text-align: left;
+}
+
+.order-page .order-form .order-form__submit {
+  margin-top: -27px;
+}
+
+.order-page .order-form .order-form__submit input {
+  margin-top: 0;
+}
+
+.order-page .order-form__next {
+  margin-bottom: 40px;
+}
+
+.order-page .order-form__next input {
+  cursor: pointer;
+}
+
+.order-page .order-form div + div {
+  margin-top: 20px;
+}
+
+.order-page .order-form .form__input::-webkit-input-placeholder,
+.order-page .order-form textarea::-webkit-input-placeholder {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.order-page .order-form .form__input::-moz-placeholder,
+.order-page .order-form textarea::-moz-placeholder {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.order-page .order-form .form__input:-ms-input-placeholder,
+.order-page .order-form textarea:-ms-input-placeholder {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.order-page .order-form .form__input::placeholder,
+.order-page .order-form textarea::placeholder {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.order-page .order-form textarea {
+  width: 1168px;
+  height: 90px;
+  background-color: #ffffff;
+  margin-top: 0;
+}
+
+.delivery-method .form__input--street {
+  width: 551px;
+}
+
+.delivery-method .form__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin-left: 40px;
+}
+
+.delivery-method .form__text p + p {
+  margin-top: 8px;
+}
+
+.delivery-method .form__text .text-pink {
+  color: #fc2db7;
+}
+
+.delivery-method .self-delivery {
+  margin-right: 20px;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+}
+
+.delivery-method .self-delivery .form__text {
+  margin-left: 20px;
+}
+
+.delivery-method .self-delivery p + p {
+  margin-top: 17px;
+}
+
+.delivery-method .self-delivery p:last-child {
+  margin-top: 18px;
+}
+
+.delivery-method .self-delivery p a {
+  text-decoration: none;
+}
+
+.delivery-method .self-delivery address {
+  font-style: normal;
+  margin-bottom: 21px;
+  line-height: 1;
+}
+
+.delivery-method .self-delivery small {
+  font-size: 16px;
+  font-style: normal;
+}
+
+.order-2-col {
+  margin-bottom: 164px;
+}
+
+.order-2-col__left, .order-2-col__right {
+  display: inline-block;
+  vertical-align: top;
+  width: 617px;
+}
+
+.order-2-col__left .form-authorize, .order-2-col__right .form-authorize {
+  text-align: left;
+  padding-right: 0;
+}
+
+.order-2-col__left .form-authorize div + div, .order-2-col__right .form-authorize div + div {
+  margin-top: 20px;
+}
+
+.order-2-col__left .form-authorize .form__input::-webkit-input-placeholder, .order-2-col__right .form-authorize .form__input::-webkit-input-placeholder {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.order-2-col__left .form-authorize .form__input::-moz-placeholder, .order-2-col__right .form-authorize .form__input::-moz-placeholder {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.order-2-col__left .form-authorize .form__input:-ms-input-placeholder, .order-2-col__right .form-authorize .form__input:-ms-input-placeholder {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.order-2-col__left .form-authorize .form__input::placeholder, .order-2-col__right .form-authorize .form__input::placeholder {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.order-2-col__left .simple-page__subtitle, .order-2-col__right .simple-page__subtitle {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6px;
+  margin-bottom: 24px;
+}
+
+.order-2-col__left .btn--submit {
+  padding-left: 54px;
+  padding-right: 54px;
+  margin-top: 0;
+}
+
+.order-2-col__right .btn--submit {
+  padding-left: 28px;
+  padding-right: 28px;
+  margin-top: 0;
+}
+
+.order-2-col__right .form__input {
+  margin-left: 17px;
+}
+
+.payment-method {
+  margin-bottom: 40px;
+}
+
+.payment-method .form__text {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #000;
+}
+
+.form-lk {
+  text-align: left;
+  width: 620px;
+}
+
+.form-lk .form__input {
+  margin-left: 0;
+}
+
+.form-lk .form__input::-webkit-input-placeholder {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.form-lk .form__input::-moz-placeholder {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.form-lk .form__input:-ms-input-placeholder {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.form-lk .form__input::placeholder {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.form-lk .form__input + .form__input {
+  margin-left: 20px;
+}
+
+.form-lk .input-wrap + .input-wrap {
+  margin-top: 20px;
+}
+
+.form-lk .subtitle {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 50px;
+  margin-top: 35px;
+  margin-bottom: 2px;
+}
+
 .site-header {
   margin-top: 20px;
   margin-bottom: 34px;
@@ -1041,6 +1373,11 @@ a:active {
   margin-right: 23px;
 }
 
+.site-header__login img {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
 .site-header__login li {
   display: inline-block;
 }
@@ -1057,7 +1394,6 @@ a:active {
 }
 
 .site-header__login a {
-  height: 17px;
   color: #000000;
   font-size: 18px;
   font-weight: 400;
@@ -1972,11 +2308,6 @@ a:active {
   margin-left: 8px;
 }
 
-.blog__links li:nth-child(7):before {
-  content: '';
-  margin-left: 0;
-}
-
 .blog__links a {
   font-size: 18px;
   font-weight: 400;
@@ -2145,22 +2476,23 @@ a:active {
   margin-left: 10px;
 }
 
-.pagination__item a {
+.pagination__item p {
   color: #000000;
   font-size: 22px;
   font-weight: 400;
+  cursor: pointer;
 }
 
-.pagination__item a:hover, .pagination__item a.active {
+.pagination__item p:hover, .pagination__item p.active {
   text-decoration: none;
   color: #fc2db7;
 }
 
-.pagination__item a.active:hover {
+.pagination__item p.active:hover {
   color: #010001;
 }
 
-.pagination__item a:active {
+.pagination__item p:active {
   color: #9f9f9f;
 }
 
@@ -2170,7 +2502,7 @@ a:active {
   vertical-align: top;
   margin-left: 35px;
   margin-right: 20px;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .sidebar__link {
@@ -2180,7 +2512,7 @@ a:active {
   line-height: 40px;
 }
 
-.sidebar__link:hover {
+.sidebar__link:hover, .sidebar__link--active {
   color: #fc2db7;
   text-decoration: none;
 }
@@ -2274,7 +2606,7 @@ a:active {
 }
 
 .catalog__item + div {
-  margin-left: 20px;
+  margin-left: 18px;
 }
 
 .catalog__item:nth-child(4n + 1) {
@@ -2282,13 +2614,13 @@ a:active {
 }
 
 .catalog__item:nth-child(n + 5) {
-  margin-top: 35px;
+  margin-top: 17px;
 }
 
 .catalog__img {
   max-width: 100%;
   height: 135px;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 .catalog__link {
@@ -2305,9 +2637,8 @@ a:active {
   color: #444444;
   font-size: 22px;
   font-weight: 400;
-  position: absolute;
-  right: 18px;
-  bottom: 0;
+  text-align: right;
+  margin-top: 22px;
 }
 
 .post__header {
@@ -2333,6 +2664,7 @@ a:active {
 
 .post__content .post__share {
   margin-top: 25px;
+  margin-left: 86px;
 }
 
 .post__category {
@@ -2459,7 +2791,8 @@ a:active {
   vertical-align: top;
 }
 
-.reviews__form .reviews__stars--form a:hover .icon-star {
+.reviews__form .reviews__stars--form a:hover .icon-star,
+.reviews__form .reviews__stars--form a.active .icon-star {
   background-image: url("../img/sprite.png");
   width: 21px;
   height: 19px;
