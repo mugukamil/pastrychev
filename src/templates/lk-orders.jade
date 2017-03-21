@@ -1,0 +1,193 @@
+---
+title: Личный кабинет
+bodyClass: cabinet-page cabinet-page--orders
+---
+extends layouts/_layout
+block content
+  .content
+    .container
+      aside.main-sidebar.sidebar
+        ul.sidebar__list
+          each link, i in ['Мои заказы', 'Личные данные', 'Персональная скидка']
+            if i == 0
+              li.sidebar__item: a.sidebar__link.sidebar__link--active(href="#") #{link}
+            else
+              li.sidebar__item: a.sidebar__link(href="#") #{link}
+      .right-col
+        ul.breadcrumb
+          li.breadcrumb__item
+            a.breadcrumb__link(href="") Главная
+          li.breadcrumb__item
+            a.breadcrumb__link(href="") Личный кабинет
+          li.breadcrumb__item
+            a.breadcrumb__link(href="") Мои заказы
+        h1.right-col__title Мои заказы
+        .lk-orders
+          .lk-order
+            h1.lk-order__title: a(href="") № 000387 | Создан: 01.03.2017 | Статус: Выполнен
+            .lk-order__content
+              .lk-order__methods
+                p Способ оплаты: Наличными
+                p Способ доставки: Самовывоз
+              .cart-list
+                .cart-item
+                  .cart-item__left
+                    img.cart__img(src="img/news6.png", alt="")
+                    .cart__product-info
+                      p.cart__product-name Какао-масло в каллетах Callebaut
+                      p.cart__product-size.product-size Упаковка
+                      p.lk-order__num 250 гр.
+                  .cart__price
+                    p Цена
+                    p.product-price 450.00 руб.
+                  .cart__qty.product-qty
+                    p Количество
+                    p.lk-order__num 1
+                .cart-item
+                  .cart-item__left
+                    img.cart__img(src="img/news5.png", alt="")
+                    .cart__product-info
+                      p.cart__product-name.cart__product-name--big-margin Рельефные листы для шоколада (KIT1), 4 шт.
+                  .cart__price
+                    p Цена
+                    p.product-price 420.00 руб.
+                  .cart__qty.product-qty
+                    p Количество
+                    p.lk-order__num 1
+                .cart-item
+                  .cart-item__left
+                    img.cart__img(src="img/news4.png", alt="")
+                    .cart__product-info
+                      p.cart__product-name.cart__product-name--big-margin Нина Тарасова "По дороге из карамельных пластинок"
+                  .cart__price
+                    p Цена
+                    p.product-price 4290.00 руб.
+                  .cart__qty.product-qty
+                    p Количество
+                    p.lk-order__num 1
+              hr.simple-page__hr
+              div.order-page__sum
+                p Сумма заказа:&nbsp;
+                  span 5,610.00 руб.
+                p Стоимость доставки:&nbsp;
+                  span 0.00 руб.
+                p Сумма налога:&nbsp;
+                  span 0.00 руб.
+                p Итого:&nbsp;
+                  span 5,610.00 руб.
+          .lk-order
+            hr.section__hr.section__hr--pink
+            h1.lk-order__title: a(href="") № 000387 | Создан: 01.03.2017 | Статус: Выполнен
+            .lk-order__content(style="display: none")
+              .lk-order__methods
+                p Способ оплаты: Наличными
+                p Способ доставки: Самовывоз
+              .cart-list
+                .cart-item
+                  .cart-item__left
+                    img.cart__img(src="img/news6.png", alt="")
+                    .cart__product-info
+                      p.cart__product-name Какао-масло в каллетах Callebaut
+                      p.cart__product-size.product-size Упаковка
+                      p.lk-order__num 250 гр.
+                  .cart__price
+                    p Цена
+                    p.product-price 450.00 руб.
+                  .cart__qty.product-qty
+                    p Количество
+                    p.lk-order__num 1
+                .cart-item
+                  .cart-item__left
+                    img.cart__img(src="img/news5.png", alt="")
+                    .cart__product-info
+                      p.cart__product-name.cart__product-name--big-margin  Рельефные листы для шоколада (KIT1), 4 шт.
+                  .cart__price
+                    p Цена
+                    p.product-price 420.00 руб.
+                  .cart__qty.product-qty
+                    p Количество
+                    p.lk-order__num 1
+                .cart-item
+                  .cart-item__left
+                    img.cart__img(src="img/news4.png", alt="")
+                    .cart__product-info
+                      p.cart__product-name.cart__product-name--big-margin Нина Тарасова "По дороге из карамельных пластинок"
+                  .cart__price
+                    p Цена
+                    p.product-price 4290.00 руб.
+                  .cart__qty.product-qty
+                    p Количество
+                    p.lk-order__num 1
+              hr.simple-page__hr
+              div.order-page__sum
+                p Сумма заказа:&nbsp;
+                  span 5,610.00 руб.
+                p Стоимость доставки:&nbsp;
+                  span 0.00 руб.
+                p Сумма налога:&nbsp;
+                  span 0.00 руб.
+                p Итого:&nbsp;
+                  span 5,610.00 руб.
+            hr.section__hr.section__hr--pink
+          .lk-order
+            h1.lk-order__title: a(href="") № 000387 | Создан: 01.03.2017 | Статус: Аннулирован
+            .lk-order__content(style="display: none")
+              .lk-order__methods
+                p Способ оплаты: Наличными
+                p Способ доставки: Самовывоз
+              .cart-list
+                .cart-item
+                  .cart-item__left
+                    img.cart__img(src="img/news6.png", alt="")
+                    .cart__product-info
+                      p.cart__product-name Какао-масло в каллетах Callebaut
+                      p.cart__product-size.product-size Упаковка
+                      p.lk-order__num 250 гр.
+                  .cart__price
+                    p Цена
+                    p.product-price 450.00 руб.
+                  .cart__qty.product-qty
+                    p Количество
+                    p.lk-order__num 1
+                .cart-item
+                  .cart-item__left
+                    img.cart__img(src="img/news5.png", alt="")
+                    .cart__product-info
+                      p.cart__product-name.cart__product-name--big-margin Рельефные листы для шоколада (KIT1), 4 шт.
+                  .cart__price
+                    p Цена
+                    p.product-price 420.00 руб.
+                  .cart__qty.product-qty
+                    p Количество
+                    p.lk-order__num 1
+                .cart-item .cart-item__left
+                    img.cart__img(src="img/news4.png", alt="")
+                    .cart__product-info
+                      p.cart__product-name.cart__product-name--big-margin Нина Тарасова "По дороге из карамельных пластинок"
+                  .cart__price
+                    p Цена
+                    p.product-price 4290.00 руб.
+                  .cart__qty.product-qty
+                    p Количество
+                    p.lk-order__num 1
+              hr.simple-page__hr
+              div.order-page__sum
+                p Сумма заказа:&nbsp;
+                  span 5,610.00 руб.
+                p Стоимость доставки:&nbsp;
+                  span 0.00 руб.
+                p Сумма налога:&nbsp;
+                  span 0.00 руб.
+                p Итого:&nbsp;
+                  span 5,610.00 руб.
+            hr.section__hr.section__hr--pink
+
+
+
+
+
+
+
+
+
+    include partials/_footer

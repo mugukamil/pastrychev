@@ -101,4 +101,10 @@ $(function() {
         $this.closest('.order-form').find('.order-page__sum').show()
     })
 
+    $('.lk-order__title a').click(function(e) {
+        e.preventDefault()
+
+        $(this).closest('.lk-order').find('.lk-order__content').toggle()
+    })
+
 })
