@@ -251,7 +251,9 @@ body {
 }
 
 input,
-button {
+button,
+select,
+textarea {
   font-family: 'pfdin-regular', sans-serif;
 }
 
@@ -822,6 +824,10 @@ a:active {
   margin-top: 15px;
 }
 
+.cart-page .simple-page__title {
+  margin-left: 170px;
+}
+
 .cart-list {
   margin-bottom: 38px;
   margin-top: 10px;
@@ -1088,6 +1094,7 @@ a:active {
 
 .order-page .order-form {
   text-align: left;
+  padding-right: 0;
 }
 
 .order-page .order-form .order-form__submit {
@@ -1729,6 +1736,7 @@ a:active {
 
 .site-footer__phone strong, .site-footer__email strong {
   color: #ffffff;
+  font-weight: normal;
   font-size: 26px;
 }
 
@@ -2056,7 +2064,7 @@ a:active {
 .fav__link {
   display: inline-block;
   vertical-align: top;
-  max-width: 130px;
+  width: 130px;
   padding-top: 5px;
   border-top: 1px solid  #9f9f9f;
   color: #000000;
@@ -2547,19 +2555,19 @@ a:active {
   color: #000000;
   font-size: 22px;
   font-weight: 400;
-  cursor: pointer;
 }
 
-.pagination__item p:hover, .pagination__item p.active {
+.pagination__item p.active {
   text-decoration: none;
   color: #fc2db7;
+  cursor: pointer;
 }
 
 .pagination__item p.active:hover {
   color: #010001;
 }
 
-.pagination__item p:active {
+.pagination__item p.active:active {
   color: #9f9f9f;
 }
 
@@ -2973,6 +2981,10 @@ a:active {
   max-width: 478px !important;
 }
 
+.product-slider__nav .slick-current {
+  border: 1px solid #fc2db7;
+}
+
 .product-slider__nav img {
   cursor: pointer;
   width: 43px !important;
@@ -2997,38 +3009,38 @@ a:active {
   vertical-align: top;
 }
 
-.product__info .product__qty p {
+.product__info--no-product .product__qty p {
   color: #fc2db7;
   font-size: 22px;
   font-weight: 400;
 }
 
-.product__info .product__qty input {
+.product__info input {
   width: 278px;
   color: #444444;
   font-size: 18px;
   font-weight: 400;
 }
 
-.product__info .product__qty input::-webkit-input-placeholder {
+.product__info input::-webkit-input-placeholder {
   color: #444444;
   font-size: 18px;
   font-weight: 400;
 }
 
-.product__info .product__qty input::-moz-placeholder {
+.product__info input::-moz-placeholder {
   color: #444444;
   font-size: 18px;
   font-weight: 400;
 }
 
-.product__info .product__qty input:-ms-input-placeholder {
+.product__info input:-ms-input-placeholder {
   color: #444444;
   font-size: 18px;
   font-weight: 400;
 }
 
-.product__info .product__qty input::placeholder {
+.product__info input::placeholder {
   color: #444444;
   font-size: 18px;
   font-weight: 400;
@@ -3159,7 +3171,7 @@ a:active {
   height: 40px;
   background-color: #ffffff;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 15px;
   color: #444444;
   font-size: 18px;
   font-weight: 400;
