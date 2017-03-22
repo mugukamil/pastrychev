@@ -9,12 +9,15 @@
       color: #000000
       font-size: 22px
       font-weight: 400
-      &.active
+      cursor: pointer
+      &:hover
         text-decoration: none
         color: #fc2db7
-        cursor: pointer
       &.active
-        &:hover
-          color: #010001
+        color: #fc2db7
+        &:hover,
         &:active
-          color: #9f9f9f
+          color: #fc2db7
+          cursor: default
+      &:active
+        color: #9f9f9f
