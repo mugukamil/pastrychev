@@ -4,16 +4,18 @@
 +font('tt0249', 'tt0249m')
 
 body
-    background-color: #eee
-    min-width: 1254px
-    font-family: 'pfdin-regular', sans-serif
+  background-color: #eee
+  min-width: 1254px
+  font-family: 'pfdin-regular', sans-serif
 input,
-button
-    font-family: 'pfdin-regular', sans-serif
+button,
+select,
+textarea
+  font-family: 'pfdin-regular', sans-serif
 
 .container
-    width: 1254px
-    margin: auto
+  width: 1254px
+  margin: auto
 
 .clr
   +clr
@@ -363,6 +365,8 @@ a
   .clear-cart
     float: right
     margin-top: 15px
+  .simple-page__title
+    margin-left: 170px
 
 .cart
   &-list
@@ -525,6 +529,7 @@ a
       margin-top: 33px
   .order-form
     text-align: left
+    padding-right: 0
     .order-form__submit
       margin-top: -27px
       input

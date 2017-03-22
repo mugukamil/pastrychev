@@ -70,7 +70,8 @@ block content
               -var items = [[{ link: 'Рельефные листы для шоколада (KIT1), 4 шт.', price: '420.00 руб.'}], [{ link:'Какао-масло в каллетах Callebaut', price:'490.00 руб.'}], [{ link:'Подложка круглая золото/жемчуг, толщина 1,5 мм', price:'14.00 руб.'}], [{ link:'Миндальная мука мелкого помола DGF, 1 кг', price:'1 350.00 руб.'}], [{ link:'Коробка для торта (255*255*120)', price:'40.00 руб.'}], [{ link:'Коробка для торта (325*325*120)', price: '420.00 руб.'}]]
               each item, i in items
                 .catalog__item
-                  img.catalog__img(src="img/news#{i+1}.png", alt="")
+                  a(href="")
+                    img.catalog__img(src="img/news#{i+1}.png", alt="")
                   p: a.catalog__link(href="#" ) #{item[0].link}
                   p.catalog__price #{item[0].price}
 
